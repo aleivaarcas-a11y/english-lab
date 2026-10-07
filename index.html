@@ -1,0 +1,1408 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>History of Sport English Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Gentium+Book+Plus&display=swap">
+<style>
+/* Layout: sticky audio bar, eight tabbed units below; athletics-track lane rule under the header. */
+:root{
+  --bg:#f2f4f6; --surface:#ffffff; --ink:#14202b; --muted:#5a6875; --line:#d6dce2;
+  --accent:#1d5ea8; --accent-soft:#e3edf8; --flag:#b85c0a; --flag-soft:#fbeedd;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-read:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-ipa:"Gentium Book Plus","Charis SIL","Doulos SIL","Lucida Sans Unicode",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e141a; --surface:#16202a; --ink:#e4eaf0; --muted:#94a3b1; --line:#2a3744;
+  --accent:#78afe8; --accent-soft:#1b2d42; --flag:#f0a557; --flag-soft:#3a2a17; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e141a; --surface:#16202a; --ink:#e4eaf0; --muted:#94a3b1; --line:#2a3744;
+  --accent:#78afe8; --accent-soft:#1b2d42; --flag:#f0a557; --flag-soft:#3a2a17; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:16px;padding-block:20px 64px}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.05}
+h3{font-size:1.3rem}
+h4{font-size:1.1rem;margin:14px 0 6px}
+.lede{color:var(--muted);max-width:70ch;margin:.5rem 0 0}
+.lanes{height:10px;margin:18px 0 0;background:repeating-linear-gradient(90deg,var(--accent) 0 2px,transparent 2px 64px),linear-gradient(var(--line),var(--line)) bottom/100% 1px no-repeat;opacity:.55}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar .in{max-width:1060px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.lbl{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+select,input[type=text],input[type=search],textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px 8px;min-width:0}
+select{max-width:280px}
+textarea{width:100%;min-height:96px;resize:vertical;font-family:var(--f-read);line-height:1.55}
+button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 11px;display:inline-flex;align-items:center;gap:6px;font-weight:500}
+button:hover{border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:not-allowed}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,.sent:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
+.seg{display:inline-flex;gap:4px}
+.now{font-size:.85rem;color:var(--muted);margin-left:auto;min-width:0}
+.now b{color:var(--ink);font-weight:600}
+svg.i{width:14px;height:14px;fill:currentColor;flex:none}
+.accpanel{max-width:1060px;margin:0 auto;padding:4px 16px 12px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.92rem}
+.accpanel label{display:inline-flex;gap:6px;align-items:center}
+.voicewarn{max-width:1060px;margin:0 auto;padding:0 16px 10px}
+nav.tabs{display:flex;gap:2px;margin:26px 0 18px;border-bottom:2px solid var(--line);flex-wrap:wrap}
+nav.tabs button{border:none;border-radius:6px 6px 0 0;background:none;padding:8px 11px;font-family:var(--f-display);font-size:1.15rem;font-weight:600;color:var(--muted);margin-bottom:-2px;border-bottom:3px solid transparent}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs .n{font-variant-numeric:tabular-nums;color:var(--accent);margin-right:4px}
+.intro{color:var(--muted);max-width:74ch;margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
+.chips input{flex:1 1 200px}
+.gl{display:grid;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.row{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr) auto;gap:6px 20px;padding:13px 16px;border-top:1px solid var(--line);align-items:start}
+.row:first-child{border-top:none}
+.term{font-weight:600;font-size:1.08rem}
+.ipa{font-family:var(--f-ipa);font-size:1.05rem;color:var(--accent)}
+.stress{font-size:.78rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;font-weight:600}
+.note{font-size:.95rem}
+.ex{font-family:var(--f-read);font-style:italic;color:var(--muted);margin-top:4px}
+.acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+@media (max-width:720px){.row{grid-template-columns:1fr}.acts{justify-content:flex-start}}
+.stack{display:grid;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px 20px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;justify-content:space-between}
+.src{font-size:.85rem;color:var(--muted)}
+.ctrl{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;align-items:center}
+.text{font-family:var(--f-read);font-size:1.08rem;line-height:1.7;max-width:70ch}
+.text p{margin:0 0 .8em}
+.blur .sent,.blur.sent{filter:blur(5px)}
+.sent{cursor:pointer;border-radius:3px;padding:1px 0}
+.sent:hover{background:var(--accent-soft)}
+.sent.on{background:var(--accent-soft);box-shadow:inset 0 -2px 0 var(--accent)}
+.kp{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.kp button{font-family:var(--f-read);font-style:italic;font-size:.92rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:18px}
+.steps{margin:.4rem 0 0;padding-left:1.2rem}
+.steps li{margin:.3rem 0}
+.target{font-family:var(--f-read);font-size:1.12rem;background:var(--bg);border-radius:6px;padding:10px 12px;margin:8px 0}
+.diff{font-family:var(--f-read);font-size:1.1rem;line-height:1.9}
+.w-miss{color:var(--flag);background:var(--flag-soft);text-decoration:underline wavy;text-underline-offset:4px;border-radius:3px;padding:0 2px}
+.w-extra{color:var(--accent);font-style:italic}
+.score{font-family:var(--f-display);font-size:2.2rem;font-variant-numeric:tabular-nums;line-height:1}
+.legend{font-size:.85rem;color:var(--muted)}
+.fix{border-top:1px solid var(--line);padding:8px 0}
+.said{color:var(--flag);text-decoration:line-through;text-decoration-thickness:1px}
+.better{color:var(--accent);font-weight:600}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+.list{list-style:none;padding:0;margin:8px 0 0}
+.list li{display:flex;gap:8px;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding:6px 0}
+.addrow{display:flex;gap:6px;flex-wrap:wrap}
+.addrow input{flex:1 1 220px}
+.warn{background:var(--flag-soft);border-radius:6px;padding:8px 12px;font-size:.92rem}
+.okbox{background:var(--accent-soft);border-radius:6px;padding:8px 12px;font-size:.92rem}
+.big{font-family:var(--f-read);font-size:1.6rem;line-height:1.3;margin:10px 0}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.opts button{font-size:1.05rem;padding:8px 14px}
+.opts button.right{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+.opts button.wrong{border-color:var(--flag);background:var(--flag-soft);text-decoration:line-through}
+.tally{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem}
+.chat{display:grid;gap:8px;max-height:420px;overflow-y:auto;padding:4px 2px;margin:10px 0}
+.msg{max-width:85%;padding:8px 12px;border-radius:8px;font-family:var(--f-read);line-height:1.5}
+.msg.them{background:var(--bg);justify-self:start}
+.msg.me{background:var(--accent-soft);justify-self:end}
+.msg .who{font-family:var(--f-body);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;display:block}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.tile .v{font-family:var(--f-display);font-size:2rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.spark{width:100%;height:70px;display:block}
+.timer{font-family:var(--f-display);font-size:1.8rem;font-variant-numeric:tabular-nums}
+table.t{border-collapse:collapse;width:100%;font-size:.95rem}
+table.t td,table.t th{border-top:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.tw{overflow-x:auto}
+a.yg{font-size:.85rem;color:var(--accent);text-underline-offset:3px;align-self:center}
+.now2{font-family:var(--f-read);font-size:1.5rem;line-height:1.35;min-height:2.2em;margin:8px 0}
+.stepl{font-size:.85rem;color:var(--muted)}
+.links a{color:var(--accent)}
+audio{width:100%;margin:8px 0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="bar" role="region" aria-label="Audio">
+  <div class="in">
+    <span class="lbl">Voz</span>
+    <select id="voice" aria-label="Voz y acento"></select>
+    <div class="seg" id="rate" role="group" aria-label="Velocidad">
+      <button data-r="0.8" aria-pressed="false">Lenta</button>
+      <button data-r="1" aria-pressed="true">Normal</button>
+      <button data-r="1.15" aria-pressed="false">Rápida</button>
+    </div>
+    <button id="rnd" aria-pressed="false">Acento al azar</button>
+    <button id="accbtn" aria-expanded="false">Elegir acentos</button>
+    <button id="stop"><svg class="i" viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="10" rx="1"/></svg>Parar</button>
+    <span class="now" id="now" aria-live="polite">Buscando voces…</span>
+  </div>
+  <div class="accpanel" id="accpanel" hidden></div>
+  <div class="voicewarn" id="voicewarn" hidden></div>
+</div>
+
+<div class="wrap">
+  <h1>History of Sport English Lab</h1>
+  <p class="lede">Material para dar History of Sport en inglés, ordenado por temas de la asignatura. El audio usa las voces del ordenador o del navegador, de modo que cada término, cada guion y cada pregunta de alumno se pueden oír con distintos acentos, nativos o no.</p>
+  <p class="warn small" style="margin-top:10px">Esta es la copia web. Las funciones que consultan a Claude (correcciones, conversación, preguntas nuevas y plan semanal) solo funcionan en la versión de Claude, y el progreso se guarda solo en este navegador.</p>
+  <div class="lanes" aria-hidden="true"></div>
+
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+
+  <!-- 0 TODAY -->
+  <section data-tab="hoy" role="tabpanel" hidden>
+    <p class="intro">El punto de partida de cada día. Elige el tema que estás dando: el calentamiento, el modo manos libres y el plan de la semana se ajustan a él.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tema que estás dando</h3>
+        <div class="chips"><select id="curTopic" aria-label="Tema actual"></select></div>
+        <h4>Plan de la semana</h4>
+        <div id="plan"><p class="small muted">Cada lunes aparecerá aquí el plan de la semana, con ejercicios preparados a partir de tus fallos y de los acentos que más te cuestan.</p></div>
+      </div>
+      <div class="card">
+        <h3>Calentamiento antes de clase</h3>
+        <p class="small muted">Unos diez minutos sin tocar la pantalla: nombres propios del tema, términos con su frase, tres frases del guion para repetir, dos preguntas de alumnos con acentos distintos y tus fallos pendientes. Repite en voz alta en cada pausa.</p>
+        <div class="ctrl"><button class="primary" id="wuGo">${PLAY}Empezar calentamiento</button><button id="wuStop">Parar</button></div>
+        <div class="stepl" id="wuStep"></div>
+        <div class="now2" id="wuNow"></div>
+      </div>
+      <div class="card">
+        <h3>Manos libres</h3>
+        <p class="small muted">Para el coche o para caminar. Suena el término, una pausa para que lo repitas y la frase de ejemplo, en bucle. Deja la pantalla encendida, porque algunos móviles cortan la voz al bloquearse.</p>
+        <div class="chips">
+          <select id="mfSrc" aria-label="Qué practicar">
+            <option value="terms">Términos del tema con su frase</option>
+            <option value="names">Nombres propios del tema</option>
+            <option value="script">Frases de los guiones del tema</option>
+            <option value="class">Frases de aula</option>
+            <option value="ff">Falsos amigos</option>
+            <option value="fails">Mis fallos pendientes</option>
+          </select>
+          <select id="mfPause" aria-label="Pausa"><option value="1500">Pausa corta</option><option value="3000" selected>Pausa media</option><option value="5000">Pausa larga</option></select>
+          <label class="small"><input type="checkbox" id="mfLoop" checked> En bucle</label>
+        </div>
+        <div class="ctrl"><button class="primary" id="mfGo">${PLAY}Empezar</button><button id="mfStop">Parar</button></div>
+        <div class="stepl" id="mfStep"></div>
+        <div class="now2" id="mfNow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 GLOSSARY -->
+  <section data-tab="gl" role="tabpanel" hidden>
+    <p class="intro">Términos y nombres propios de cada tema, con transcripción fonética, sílaba tónica y una frase de uso. Los falsos amigos y las frases de aula sirven para cualquier clase.</p>
+    <div class="chips">
+      <select id="glTopic" aria-label="Tema"></select>
+      <div class="seg" role="group" aria-label="Tipo">
+        <button data-k="all" aria-pressed="true">Todo</button>
+        <button data-k="term" aria-pressed="false">Términos</button>
+        <button data-k="name" aria-pressed="false">Nombres</button>
+      </div>
+      <input type="search" id="q" placeholder="Buscar" aria-label="Buscar">
+      <button id="glAdd">Añadir este tema al repaso</button>
+    </div>
+    <div class="gl" id="gl"></div>
+  </section>
+
+  <!-- 2 PRONUNCIATION -->
+  <section data-tab="pr" role="tabpanel" hidden>
+    <p class="intro">Ejercicios sobre los rasgos que más delatan a un hispanohablante. Los de oído (pares mínimos y terminaciones en -ed) llevan marcador de aciertos, que se guarda en el progreso.</p>
+    <div class="stack">
+      <div class="card">
+        <h3>Fechas, cifras y medidas en voz alta</h3>
+        <p class="small muted">Lee la forma escrita en voz alta, después pulsa «Ver y oír» y compara.</p>
+        <div class="target big" id="numW"></div>
+        <div id="numS" class="small" hidden></div>
+        <div class="ctrl"><button class="primary" id="numShow">Ver y oír</button><button id="numNext">Siguiente</button><span class="tally" id="numPos"></span></div>
+        <details><summary class="small">Ver la lista completa</summary><div class="tw"><table class="t" id="numTable"></table></div></details>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>Pares mínimos</h3>
+          <p class="small muted">Suena una de las dos palabras. Elige cuál has oído. Con «Acento al azar» activado es bastante más difícil.</p>
+          <div class="ctrl"><button class="primary" id="mpPlay">Nueva palabra</button><button id="mpAgain">Repetir</button><span class="tally" id="mpTally"></span></div>
+          <div class="opts" id="mpOpts"></div>
+          <div id="mpNote" class="small"></div>
+          <details><summary class="small">Ver todos los pares</summary><div class="kp" id="mpAll"></div></details>
+        </div>
+        <div class="card">
+          <h3>Terminaciones en -ed</h3>
+          <p class="small muted">¿Cómo suena la terminación? Tras /t/ o /d/ se añade sílaba (/ɪd/); tras sonido sordo suena /t/ y tras sonoro, /d/.</p>
+          <div class="big" id="edW"></div>
+          <div class="opts" id="edOpts"><button data-e="t">/t/</button><button data-e="d">/d/</button><button data-e="id">/ɪd/</button></div>
+          <div class="ctrl"><button id="edNext">Siguiente</button><span class="tally" id="edTally"></span></div>
+          <div id="edNote" class="small"></div>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>Sin «e» de apoyo delante de s</h3>
+          <p class="small muted">Decimos «esport» o «Esparta» porque en español ninguna palabra empieza por s más consonante. Escucha y repite empezando directamente en la s, alargándola un poco.</p>
+          <div class="kp" id="sWords"></div>
+        </div>
+        <div class="card">
+          <h3>Acento de frase y formas débiles</h3>
+          <p class="small muted">En mayúsculas, las sílabas que se acentúan. Las palabras gramaticales sin acento se reducen a schwa, /ə/. Escucha, repite y fíjate en las notas.</p>
+          <div id="weak"></div>
+        </div>
+      </div>
+      <div class="card links">
+        <h3>Acentos reales</h3>
+        <p class="small">Las voces sintéticas no imitan bien a un alumno chino, árabe o nigeriano hablando inglés. Para eso hay grabaciones de personas reales.</p>
+        <ul class="steps small">
+          <li><a href="https://youglish.com/" target="_blank" rel="noopener">YouGlish</a>. Escribe una palabra y oyes cómo la dicen cientos de personas en vídeos reales, con filtro por acento (Reino Unido, Estados Unidos, Australia y otros). En el glosario, cada término lleva su enlace directo.</li>
+          <li><a href="https://accent.gmu.edu/" target="_blank" rel="noopener">Speech Accent Archive</a>. El mismo párrafo leído por hablantes de cientos de lenguas maternas. Muy útil para anticipar cómo suenan tus Erasmus.</li>
+          <li><a href="https://www.dialectsarchive.com/" target="_blank" rel="noopener">International Dialects of English Archive</a>. Grabaciones de habla espontánea por país y región, también de Asia, África y Oriente Medio.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Nombres propios del tema</h3>
+        <p class="small muted">Los nombres de la Antigüedad y de los autores se pronuncian en inglés muy lejos del español. Los nombres indígenas y castellanos (Moctezuma, Cuzco, Jovellanos) puedes decirlos con fonética española; los hablantes de inglés suelen adaptarlos.</p>
+        <div class="chips"><select id="nmTopic" aria-label="Tema"></select></div>
+        <div class="gl" id="nm"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 SCRIPTS -->
+  <section data-tab="sc" role="tabpanel" hidden>
+    <p class="intro">Pasajes en inglés oral académico que siguen el orden de tus diapositivas. Conviene escucharlos primero con el texto oculto, después leerlos y, por último, usar el modo sombra, en el que la voz dice una frase, se detiene y tú la repites con el mismo ritmo. Al hacer clic en una frase se oye solo esa.</p>
+    <div class="chips"><select id="scTopic" aria-label="Tema"></select></div>
+    <div class="stack" id="scripts"></div>
+  </section>
+
+  <!-- 4 STUDENT QUESTIONS -->
+  <section data-tab="qs" role="tabpanel" hidden>
+    <p class="intro">Preguntas como las que hacen los alumnos, cada una con un acento distinto si está activado el azar. Primero escribe lo que has entendido; después responde en voz alta con el dictado y pide la valoración de Claude.</p>
+    <div class="grid2">
+      <div class="card">
+        <div class="chips">
+          <select id="qsArea" aria-label="Bloque"></select>
+          <label class="small"><input type="checkbox" id="qsRnd" checked> Acento al azar en cada pregunta</label>
+        </div>
+        <div class="ctrl">
+          <button class="primary" id="qsNew">${PLAY}Nueva pregunta</button>
+          <button id="qsRep">Repetir</button>
+          <button id="qsSlow">Repetir despacio</button>
+          <span class="tally" id="qsTally"></span>
+        </div>
+        <label class="tag" for="qsHeard">Lo que has entendido</label>
+        <textarea id="qsHeard" placeholder="Escribe la pregunta tal como la has oído"></textarea>
+        <div class="ctrl"><button class="primary" id="qsCheck">Comprobar</button><button id="qsReveal">Ver la pregunta</button></div>
+        <div id="qsOut"></div>
+      </div>
+      <div class="card">
+        <h3>Tu respuesta</h3>
+        <p class="small muted">Contesta como lo harías en clase, dictando con el Mac. Claude valora la claridad, el inglés y si respondes a lo que se pregunta, y propone una respuesta modelo breve que puedes escuchar.</p>
+        <textarea id="qsAns" placeholder="Well, that's a good question..."></textarea>
+        <div class="ctrl"><button class="primary" id="qsEval">Valorar respuesta</button></div>
+        <div id="qsFb" aria-live="polite"></div>
+        <h4>Preguntas nuevas</h4>
+        <p class="small muted">Claude escribe seis preguntas de alumnos sobre el tema que elijas, con el registro y algunos fallos propios de estudiantes de primero de distintos países. Se añaden al bloque «Generadas por Claude».</p>
+        <div class="chips"><select id="qsGenTopic" aria-label="Tema"></select><button id="qsGen">Generar</button></div>
+        <div id="qsGenOut" class="small"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POD -->
+  <section data-tab="pod" role="tabpanel" hidden>
+    <p class="intro">Escucha larga con tus propios pódcast en inglés. El audio se corta en fragmentos breves: escuchas uno, lo repites a la vez o justo después (modo sombra) y pasas al siguiente. Conviene empezar a velocidad reducida.</p>
+    <div class="card">
+      <div class="chips"><select id="podSel" aria-label="Episodio"></select></div>
+      <audio id="podAudio" controls preload="metadata"></audio>
+      <div class="chips">
+        <label class="small" for="segLen">Fragmento</label><select id="segLen"><option value="6">6 s</option><option value="10" selected>10 s</option><option value="15">15 s</option><option value="25">25 s</option></select>
+        <label class="small" for="podSpeed">Velocidad</label><select id="podSpeed"><option value="0.75">0,75</option><option value="0.9" selected>0,9</option><option value="1">1</option></select>
+      </div>
+      <div class="ctrl">
+        <button class="primary" id="segPlay">${PLAY}Fragmento</button><button id="segPrev">Anterior</button><button id="segNext">Siguiente</button>
+        <button id="segAuto" aria-pressed="false">Sombra automática</button>
+        <span class="tally" id="segPos"></span>
+      </div>
+      <p class="small muted" id="podNote">En la sombra automática suena el fragmento, se abre una pausa algo más larga para que lo repitas y pasa solo al siguiente.</p>
+    </div>
+  </section>
+
+  <!-- 5 CONVERSATION -->
+  <section data-tab="cv" role="tabpanel" hidden>
+    <p class="intro">Claude hace de alumno o de colega en un congreso y su voz suena con un acento acorde al personaje cuando el navegador lo tiene. Responde dictando. Al terminar, pide la valoración de la conversación completa.</p>
+    <div class="grid2">
+      <div class="card">
+        <label class="tag" for="cvSel">Situación</label>
+        <select id="cvSel" style="width:100%;max-width:100%"></select>
+        <p class="small" id="cvBrief"></p>
+        <div class="ctrl"><button class="primary" id="cvStart">Empezar</button><button id="cvEnd">Terminar y valorar</button><span class="small muted" id="cvVoice"></span></div>
+        <div class="chat" id="cvChat" aria-live="polite"></div>
+        <textarea id="cvIn" placeholder="Tu respuesta (dictada o escrita)"></textarea>
+        <div class="ctrl"><button class="primary" id="cvSend">Responder</button><button id="cvRep">Repetir lo último</button></div>
+      </div>
+      <div class="card">
+        <h3>Valoración</h3>
+        <div id="cvFb" aria-live="polite"><p class="small muted">Aparecerá aquí al terminar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 HISTORIAN -->
+  <section data-tab="hi" role="tabpanel" hidden>
+    <p class="intro">El inglés propio de una clase de historia, para graduar la certeza, describir una fuente y narrar en pasado.</p>
+    <div class="stack">
+      <div class="grid2">
+        <div class="card"><h3>Graduar la certeza</h3><p class="small muted">De más a menos seguro.</p><div id="hedge"></div></div>
+        <div class="card"><h3>Describir una fuente</h3><div id="descr"></div></div>
+      </div>
+      <div class="card">
+        <h3>Describe esta fuente en 45 segundos</h3>
+        <p class="small muted">Ten la imagen delante en tus diapositivas. Describe qué se ve, qué nos dice y qué deja sin decir, dictando o escribiendo, y pide la valoración.</p>
+        <div class="chips"><select id="srcSel" style="flex:1 1 300px;max-width:100%" aria-label="Fuente"></select><button id="srcTimer">Empezar 45 s</button><span class="timer" id="srcClock">0:45</span></div>
+        <textarea id="srcIn" placeholder="This is a wall painting from..."></textarea>
+        <div class="ctrl"><button class="primary" id="srcEval">Valorar</button></div>
+        <div id="srcFb" aria-live="polite"></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Narrar en pasado</h3><div id="tenses" class="small"></div></div>
+        <div class="card"><h3>Practica los tiempos</h3><div id="tq"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 REVIEW -->
+  <section data-tab="rv" role="tabpanel" hidden>
+    <p class="intro">Repaso espaciado. Dices la palabra o la frase en voz alta, después la ves y la oyes, y valoras cómo te ha salido; lo que falla vuelve antes. Para llenar el mazo, usa «Añadir este tema al repaso» en el glosario. Las palabras que el dictado no reconoce entran solas.</p>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2" style="margin-top:18px">
+      <div class="card">
+        <h3>Tarjeta</h3>
+        <div id="rvCard"></div>
+      </div>
+      <div class="card">
+        <h3>Progreso</h3>
+        <div id="prog"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 DIAGNOSIS -->
+  <section data-tab="dx" role="tabpanel" hidden>
+    <p class="intro">El dictado comprueba si una máquina entiende lo que dices, que es una prueba bastante fiel de la inteligibilidad. La corrección con Claude revisa una explicación libre. La grabación de una clase real permite el análisis completo, que hago desde tu carpeta.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>A. Dictado de pronunciación</h3>
+        <ol class="steps small">
+          <li>Elige una frase y escúchala.</li>
+          <li>Pon el cursor en el recuadro y activa el dictado del Mac (tecla de micrófono o Fn dos veces), con el idioma del dictado en inglés.</li>
+          <li>Lee la frase y pulsa «Comparar». Las palabras no reconocidas pasan al repaso.</li>
+        </ol>
+        <select id="dxsel" style="width:100%;max-width:100%" aria-label="Frase"></select>
+        <div class="target" id="dxtarget"></div>
+        <div class="ctrl"><button id="dxplay">Oír la frase</button></div>
+        <textarea id="dxin" placeholder="Dicta aquí la frase" aria-label="Dictado"></textarea>
+        <div class="ctrl"><button class="primary" id="dxgo">Comparar</button><button id="dxclear">Borrar</button></div>
+        <div id="dxout"></div>
+      </div>
+      <div class="card">
+        <h3>B. Explicación libre corregida por Claude</h3>
+        <p class="small muted">Explica con tus palabras una parte de la clase. Claude señala errores de gramática, falsos amigos y colocaciones poco naturales, propone frases de aula y marca palabras con riesgo de pronunciación. Cada consulta gasta tu propio uso de Claude.</p>
+        <select id="fbctx" style="width:100%;max-width:100%" aria-label="Tema"></select>
+        <textarea id="fbin" style="margin-top:8px" placeholder="Today I'd like to explain how the assessment works..." aria-label="Explicación"></textarea>
+        <div class="ctrl"><button class="primary" id="fbgo">Corregir</button></div>
+        <div id="fbout" aria-live="polite"></div>
+      </div>
+      <div class="card">
+        <h3>C. Grabación de una clase real</h3>
+        <ol class="steps small">
+          <li>Graba con Notas de voz del iPhone entre ocho y diez minutos de una clase, sin preparar nada especial.</li>
+          <li>En la grabación, toca el icono de transcripción (las versiones recientes de iOS la generan solas en inglés), cópiala y guárdala como .txt junto al audio en «ASIGNATURAS/HISTORY OF SPORTS/English Lab/Grabaciones».</li>
+          <li>Avísame en el chat. Con la transcripción localizo lo que el reconocimiento no entendió (pronunciación) y los fallos de gramática y vocabulario, y te devuelvo el registro con su versión correcta.</li>
+        </ol>
+        <p class="small muted">Si en la grabación se oye a estudiantes, conviene avisarles antes o grabar solo tu parte.</p>
+      </div>
+      <div class="card">
+        <h3>D. Mi registro de fallos</h3>
+        <p class="small muted">Lo que detectes en clase, apuntado al momento. Se guarda con tu progreso y puedo leerlo para preparar ejercicios.</p>
+        <div class="addrow"><input type="text" id="login" placeholder="Ej.: dije «assist to class», es «attend class»" aria-label="Nuevo fallo"><button id="logadd">Añadir</button></div>
+        <ul class="list" id="log"></ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const PLAY='<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>';
+document.querySelectorAll("button").forEach(b=>{if(b.innerHTML.includes("${PLAY}"))b.innerHTML=b.innerHTML.split("${PLAY}").join(PLAY)});
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+
+/* ================= DATA ================= */
+const TOPICS={intro:"Presentación de la asignatura",t1:"Topic 1 · Introduction",t2:"Topic 2 · Egypt, Persia, Phoenicia",t3:"Topic 3 · Crete and Greece",t4:"Topic 4 · Etruria and Rome",t5:"Topic 5 · China, Japan, India",t6:"Topic 6 · Aztecs, Mayans, Incas",t7:"Topic 7 · Middle Ages",t8:"Topic 8 · Renaissance",t9:"Topic 9 · Baroque",t10:"Topic 10 · Enlightenment",t11:"Topic 11 · 19th century",ff:"Falsos amigos y deslices",class:"Frases de aula"};
+// [topic, kind(term|name), term, ipa, stress, note, example]
+const GLR=[
+["intro","term","syllabus","/ˈsɪləbəs/","SYL-la-bus","Acento en la primera sílaba. El plural es syllabuses; syllabi es más formal.","You'll find the full syllabus on the Virtual Campus."],
+["intro","term","module","/ˈmɒdjuːl/","MOD-yool","En el Reino Unido la «asignatura» es module o course. Subject se usa para la materia en general.","History of Sport is a core module in the first semester."],
+["intro","term","compulsory","/kəmˈpʌlsəri/","com-PUL-so-ry","Acento en la segunda sílaba, con la vocal breve de cup.","Workshops are compulsory."],
+["intro","term","assessment","/əˈsesmənt/","a-SESS-ment","La «evaluación» de la asignatura. Evaluation se reserva más para valorar un programa o un servicio.","Let's move on to assessment, which is usually what worries you most."],
+["intro","term","mark","/mɑːk/","MARK","«Nota» es mark en el Reino Unido y grade en Estados Unidos.","Submitting every workshop adds one bonus point to your final mark."],
+["intro","term","mid-term exam","/ˌmɪdˈtɜːm ɪɡˈzæm/","mid-TERM ig-ZAM","El examen parcial. La ex de exam suena con g, /ɪɡz/.","The mid-term exam covers topics one to four."],
+["intro","term","retake","/ˈriːteɪk/","REE-take","La «recuperación». En el Reino Unido se oye también resit, /ˈriːsɪt/.","There's a retake session in July."],
+["intro","term","sitting","/ˈsɪtɪŋ/","SIT-ting","Cada «convocatoria» de examen. También attempt.","You have six sittings to pass the module, plus one additional grace sitting."],
+["intro","term","attendance","/əˈtendəns/","a-TEN-dance","La «asistencia». El verbo es attend; assist significa ayudar.","You need at least sixty per cent attendance."],
+["intro","term","workshop","/ˈwɜːkʃɒp/","WURK-shop","La vocal es la /ɜː/ de work, bird o first, distinta de la de war.","Each workshop is linked to the topic we're covering at the time."],
+["intro","term","plagiarism","/ˈpleɪdʒərɪzəm/","PLAY-ja-ri-zum","Empieza con el diptongo de play y la g suena /dʒ/.","Plagiarism means copying a text without citing its source."],
+["intro","term","academic integrity","/ˌækəˈdemɪk ɪnˈteɡrəti/","a-ca-DEM-ic in-TEG-ri-ty","Dos palabras con el acento desplazado respecto al español.","Academic integrity applies to every piece of work you submit."],
+["intro","term","submit","/səbˈmɪt/","sub-MIT","«Entregar» un trabajo. En registro oral es muy frecuente hand in.","Please submit the declaration form with every workshop."],
+["intro","term","lecturer","/ˈlektʃərə/","LEC-chu-ra","El profesor universitario. Lecture es la clase y la «lectura» se dice reading.","My name is Alejandro Leiva, and I'll be your lecturer this semester."],
+["intro","term","ground rules","/ˈɡraʊnd ruːlz/","GROUND rules","Las normas básicas de funcionamiento de la clase.","Before we finish, a few ground rules."],
+["intro","term","warning","/ˈwɔːnɪŋ/","WOR-ning","La /ɔː/ larga de war; la g final apenas se oye.","The first step is a warning."],
+["intro","term","office hours","/ˈɒfɪs ˌaʊəz/","OF-fis ow-ers","Las «tutorías». En tu diapositiva aparece mentoring hours, que también se entiende.","You can ask me later by email or in my office hours."],
+["intro","term","degree","/dɪˈɡriː/","di-GREE","La «carrera». Career es la trayectoria profesional.","This is a multicultural degree."],
+["intro","term","per cent","/pə ˈsent/","per-CENT","El acento cae en cent.","You need to attend at least sixty per cent of the classes."],
+["intro","term","Turnitin","/ˈtɜːnɪtɪn/","TURN-it-in","Se lee como turn it in, «entrégalo».","All work submitted in this module goes through Turnitin."],
+["intro","term","bonus","/ˈbəʊnəs/","BOH-nus","La o es el diptongo /əʊ/.","You'll get one bonus point on your final mark."],
+["t1","term","history","/ˈhɪstri/","HIS-tree","En habla normal se reduce a dos sílabas.","History is an analytical tool."],
+["t1","term","historian","/hɪˈstɔːriən/","his-TOR-ee-an","El acento se mueve dentro de la familia: HIStory, hisTORian, hisTORical.","Historians apply a method to events that have already taken place."],
+["t1","term","historiography","/hɪˌstɒriˈɒɡrəfi/","his-to-ree-OG-ra-fee","Acento en og, igual que en biography o geography.","Historiography is the study of how history has been written."],
+["t1","term","source","/sɔːs/","SAWS","Una sola sílaba larga, sin r en británico.","A primary source was produced by the society we're studying."],
+["t1","term","evidence","/ˈevɪdəns/","EV-i-dence","Incontable y significa «pruebas»: the evidence suggests, nunca evidences.","The archaeological evidence is extremely scarce."],
+["t1","term","archaeology","/ˌɑːkiˈɒlədʒi/","ar-kee-OL-o-jee","La ch suena /k/. El adjetivo es archaeological, /ˌɑːkiəˈlɒdʒɪkl/.","Archaeology is one of the auxiliary sciences of history."],
+["t1","term","anthropology","/ˌænθrəˈpɒlədʒi/","an-thro-POL-o-jee","La th es /θ/, como la z castellana.","Anthropology studies the biological, social and cultural aspects of human beings."],
+["t1","term","palaeography","/ˌpæliˈɒɡrəfi/","pal-ee-OG-ra-fee","Ortografía británica con ae; en Estados Unidos, paleography.","Palaeography helps us read ancient handwriting."],
+["t1","term","epigraphy","/ɪˈpɪɡrəfi/","e-PIG-ra-fee","Acento en la segunda sílaba.","Epigraphy studies inscriptions on stone and metal."],
+["t1","term","numismatics","/ˌnjuːmɪzˈmætɪks/","nyoo-miz-MAT-iks","La s intervocálica suena /z/.","A Spanish piece of eight is a good example for numismatics."],
+["t1","term","diachronic","/ˌdaɪəˈkrɒnɪk/","dy-a-KRON-ik","La primera sílaba es /daɪ/, como en die.","A diachronic approach studies a society's past as a whole."],
+["t1","term","synchronic","/sɪŋˈkrɒnɪk/","sing-KRON-ik","La n suena como en sing.","A synchronic approach focuses on one specific moment."],
+["t1","term","hypothesis","/haɪˈpɒθəsɪs/","hy-POTH-e-sis","El plural hypotheses termina en /siːz/.","Neuendorff's hypothesis links physical exercise to the survival instinct."],
+["t1","term","secularism","/ˈsekjələrɪzəm/","SEK-yu-la-ri-zum","Acento en la primera sílaba.","Secularism means competing for the sake of competing, not to honour a god."],
+["t1","term","quantification","/ˌkwɒntɪfɪˈkeɪʃn/","kwon-ti-fi-KAY-shun","Las palabras en -ation llevan el acento en la sílaba anterior a -tion.","Quantification turns every performance into a number."],
+["t1","term","bureaucratisation","/bjʊəˌrɒkrətaɪˈzeɪʃn/","byoo-ROK-ra-ty-ZAY-shun","Acento principal en zay y secundario en rok.","Bureaucratisation brings federations, rules and officials."],
+["t1","term","hierarchy","/ˈhaɪərɑːki/","HY-er-ar-kee","Empieza con /haɪ/, como high.","Maslow's hierarchy of needs is usually drawn as a pyramid."],
+["t1","term","athlete","/ˈæθliːt/","ATH-leet","Dos sílabas, sin vocal añadida entre th y l.","What did sport mean for the people we might today call athletes?"],
+["t1","term","marathon","/ˈmærəθən/","MA-ra-thon","La th es /θ/ y la última vocal se reduce.","In 1967 Kathrine Switzer ran the Boston Marathon."],
+["t1","term","Palaeolithic","/ˌpæliəˈlɪθɪk/","pal-ee-o-LITH-ik","Acento en lith; lo mismo en Neolithic, /ˌniːəˈlɪθɪk/.","Running and walking in the Upper Palaeolithic left footprints we can still study."],
+["t1","term","bipedalism","/baɪˈpiːdəlɪzəm/","by-PEE-da-li-zum","Acento en pee.","Bipedalism marks the beginning of humanity."],
+["t1","term","ethnographic analogy","/ˌeθnəˈɡræfɪk əˈnælədʒi/","eth-no-GRAF-ik a-NAL-o-jee","Dos acentos desplazados respecto al español.","Ethnographic analogy tells us what functions physical activity can perform."],
+["t1","term","desert","/ˈdezət/","DEZ-ert","Desert (desierto) lleva el acento al principio; dessert (postre), al final.","Desert kites are huge trap structures found in arid areas."],
+["t1","name","Huizinga","/ˈhaɪzɪŋə/","HY-zing-a","Pronunciación inglesa habitual; en neerlandés suena distinto.","For Huizinga, play is older than culture."],
+["t1","name","Homo Ludens","/ˌhəʊməʊ ˈluːdenz/","HOH-moh LOO-denz","Latín a la inglesa, con la o de go.","Homo Ludens was published in 1938."],
+["t1","name","Guttmann","/ˈɡʊtmən/","GUT-mun","La segunda sílaba se reduce a /mən/.","Guttmann identified seven characteristics of modern sport."],
+["t1","name","Eichberg","/ˈaɪkbɜːɡ/","AIK-burg","Así lo suelen decir los anglófonos; en alemán la ch es más suave.","Eichberg questioned the yardstick."],
+["t1","name","Neanderthal","/niˈændətɑːl/","nee-AN-der-tahl","En británico es frecuente pronunciar t y no th.","Schöningen preserves wooden weapons made by Neanderthals."],
+["t1","name","Schöningen","/ˈʃɜːnɪŋən/","SHUR-ning-en","Nombre alemán; la ö se aproxima a la vocal de bird.","The site of Schöningen is in Lower Saxony."],
+["t1","name","Kathrine Switzer","/ˈkæθrɪn ˈswɪtsə/","KATH-rin SWIT-ser","La w se pronuncia: /sw/.","Kathrine Switzer ran Boston in 1967."],
+["t1","name","Maslow","/ˈmæzləʊ/","MAZ-loh","La s suena /z/.","Maslow's hierarchy of needs."],
+["t2","term","pharaoh","/ˈfeərəʊ/","FAIR-oh","La ph suena f y la primera sílaba es la de fair.","The pharaoh's run was the central element of the festival."],
+["t2","term","hieroglyphs","/ˈhaɪərəɡlɪfs/","HY-ro-glifs","Empieza con /haɪ/.","Hieroglyphs record the pharaoh's feats."],
+["t2","term","iconography","/ˌaɪkəˈnɒɡrəfi/","eye-ko-NOG-ra-fee","La i inicial es /aɪ/.","Iconography is the most abundant source for Egyptian sport."],
+["t2","term","chariot","/ˈtʃæriət/","CHA-ree-ot","La ch es /tʃ/ y la última sílaba se reduce.","The chariot and the horses were symbols of royal power."],
+["t2","term","archery","/ˈɑːtʃəri/","AR-che-ree","Tres sílabas.","Archery at copper targets."],
+["t2","term","wrestling","/ˈreslɪŋ/","RES-ling","La w y la t no suenan.","The wrestling scenes at Beni Hasan."],
+["t2","term","dynasty","/ˈdɪnəsti/","DIN-as-tee","En británico, con /ɪ/ breve; en americano, /ˈdaɪnəsti/.","the Eighteenth Dynasty"],
+["t2","term","funerary","/ˈfjuːnərəri/","FYOO-ne-ra-ree","Acento en la primera sílaba.","the funerary complex of Djoser at Saqqara"],
+["t2","term","relief","/rɪˈliːf/","ri-LEEF","«Relieve» en escultura.","a relief from Saqqara"],
+["t2","term","marshes","/ˈmɑːʃɪz/","MAR-shiz","«Marismas».","Hunting in the marshes was an aristocratic pastime."],
+["t2","term","sanctuary","/ˈsæŋktʃuəri/","SANK-chu-a-ree","La c casi desaparece en habla rápida.","a sanctuary of the god"],
+["t2","term","zurkhaneh","/ˌzʊəkɑːˈneɪ/","zoor-kah-NAY","Palabra persa, «casa de la fuerza».","The zurkhaneh survives in Iran today."],
+["t2","name","Djoser","/ˈdʒəʊsə/","JOH-ser","La dj suena /dʒ/.","the funerary complex of Djoser"],
+["t2","name","Saqqara","/səˈkɑːrə/","sa-KAH-ra","Acento en la segunda sílaba.","Saqqara, near Memphis"],
+["t2","name","Beni Hasan","/ˌbeni ˈhɑːsən/","BEN-ee HAH-san","","the tombs of Beni Hasan"],
+["t2","name","Thebes","/θiːbz/","THEEBZ","Una sola sílaba y th /θ/.","Thebes was the religious capital of the New Kingdom."],
+["t2","name","Hatshepsut","/hætˈʃepsuːt/","hat-SHEP-soot","Acento en shep.","Hatshepsut also took part in the Heb-Sed festival."],
+["t2","name","Amenhotep","/ˌɑːmənˈhəʊtep/","ah-men-HOH-tep","Acento en hoh.","Amenhotep the Second boasted about his archery."],
+["t2","name","Heb-Sed","/ˌheb ˈsed/","heb SED","Se pronuncia la h.","the Heb-Sed festival"],
+["t2","name","Rosetta Stone","/rəʊˈzetə stəʊn/","roh-ZET-a STONE","La s intervocálica suena /z/.","The Rosetta Stone is in the British Museum."],
+["t2","name","Achaemenid","/əˈkiːmənɪd/","a-KEE-me-nid","La ch suena /k/.","the Achaemenid Empire"],
+["t2","name","Sasanian","/səˈseɪniən/","sa-SAY-nee-an","","the Sasanian period"],
+["t2","name","Cyrus","/ˈsaɪrəs/","SY-rus","La y es /aɪ/.","Cyrus the Great"],
+["t2","name","Darius","/dəˈraɪəs/","da-RY-us","Acento en la segunda sílaba.","Darius the First"],
+["t2","name","Xenophon","/ˈzenəfən/","ZEN-o-fun","La x inicial suena /z/.","Xenophon describes the education of Persian boys."],
+["t2","name","Phoenicia","/fəˈnɪʃə/","fe-NISH-a","La ph es /f/ y la ci, /ʃ/.","Phoenicia was a land of sailors and traders."],
+["t2","name","Tyre","/ˈtaɪə/","TY-er","Una sílaba con diptongo.","the city of Tyre"],
+["t2","name","Punic","/ˈpjuːnɪk/","PYOO-nik","La u inicial es /juː/.","the Punic world"],
+["t3","term","stadium","/ˈsteɪdiəm/","STAY-dee-um","Sin e de apoyo y con el diptongo /eɪ/.","The stadium at Olympia held about forty thousand spectators."],
+["t3","term","pentathlon","/penˈtæθlən/","pen-TATH-lon","Acento en tath y sin vocal entre th y l.","The pentathlon combined five events."],
+["t3","term","pankration","/pænˈkreɪtiən/","pan-KRAY-tee-on","Mezcla de lucha y pugilato.","The pankration was the most brutal contest."],
+["t3","term","gymnasium","/dʒɪmˈneɪziəm/","jim-NAY-zee-um","La g es /dʒ/ y el acento cae en nay.","Young men trained in the gymnasium."],
+["t3","term","palaestra","/pəˈlestrə/","pa-LES-tra","El recinto de lucha.","the palaestra at Olympia"],
+["t3","term","javelin","/ˈdʒævlɪn/","JAV-lin","Dos sílabas.","The javelin was thrown with a leather thong."],
+["t3","term","discus","/ˈdɪskəs/","DIS-kus","","the discus throw"],
+["t3","term","equestrian","/ɪˈkwestriən/","e-KWES-tree-an","Acento en kwes.","equestrian events"],
+["t3","term","bull-leaping","/ˈbʊl ˌliːpɪŋ/","BULL lee-ping","La u de bull es breve, como en put.","What did bull-leaping mean?"],
+["t3","term","fresco","/ˈfreskəʊ/","FRES-koh","Plural frescoes.","the bull-leaping fresco from Knossos"],
+["t3","term","rhyton","/ˈraɪtɒn/","RY-ton","Vaso ritual.","the Boxer Rhyton"],
+["t3","term","Panhellenic","/ˌpænheˈlenɪk/","pan-he-LEN-ik","","the four Panhellenic games"],
+["t3","term","Olympiad","/əˈlɪmpiæd/","o-LIM-pee-ad","El periodo de cuatro años entre juegos.","the first Olympiad"],
+["t3","term","victor","/ˈvɪktə/","VIK-ter","El vencedor en un certamen.","Victors received an olive wreath."],
+["t3","term","Aegean","/iˈdʒiːən/","ee-JEE-an","La g es /dʒ/.","the Aegean Bronze Age"],
+["t3","name","Crete","/kriːt/","KREET","Una sílaba.","the island of Crete"],
+["t3","name","Knossos","/ˈknɒsɒs/","KNOS-os","Muchos anglófonos no pronuncian la k: /ˈnɒsɒs/.","the palace of Knossos"],
+["t3","name","Minoan","/mɪˈnəʊən/","mi-NOH-an","Acento en noh.","Minoan women"],
+["t3","name","Mycenae","/maɪˈsiːniː/","my-SEE-nee","La y es /aɪ/ y la c, /s/.","Mycenae and the Dark Age"],
+["t3","name","Mycenaean","/ˌmaɪsɪˈniːən/","my-si-NEE-an","Acento en nee.","Mycenaean palaces"],
+["t3","name","Thera","/ˈθɪərə/","THEER-a","Th /θ/.","the eruption of Thera"],
+["t3","name","Akrotiri","/ˌækrəˈtɪəri/","ak-ro-TEER-ee","","the boxing boys of Akrotiri"],
+["t3","name","Olympia","/əˈlɪmpiə/","o-LIM-pee-a","Acento en lim.","the sanctuary of Zeus at Olympia"],
+["t3","name","Elis","/ˈiːlɪs/","EE-lis","","Elis organised the games."],
+["t3","name","Zeus","/zjuːs/","ZYOOS","En americano, /zuːs/.","the temple of Zeus"],
+["t3","name","Athens","/ˈæθɪnz/","ATH-inz","Th /θ/ y una s final sonora.","Athens and Sparta"],
+["t3","name","Sparta","/ˈspɑːtə/","SPAR-ta","Sin e de apoyo.","Spartan women also exercised."],
+["t3","name","Patroclus","/pəˈtrɒkləs/","pa-TROK-lus","Acento en trok.","the funeral games of Patroclus"],
+["t3","name","Achilles","/əˈkɪliːz/","a-KIL-eez","La ch es /k/.","Achilles organises the games."],
+["t3","name","Homer","/ˈhəʊmə/","HOH-mer","Se pronuncia la h.","Homer's Iliad"],
+["t3","name","Iliad","/ˈɪliæd/","IL-ee-ad","","Book 23 of the Iliad"],
+["t3","name","Philostratus","/fɪˈlɒstrətəs/","fi-LOS-tra-tus","","Philostratus wrote on gymnastics."],
+["t3","name","Pausanias","/pɔːˈseɪniəs/","paw-SAY-nee-as","","Pausanias describes Olympia."],
+["t3","name","Pindar","/ˈpɪndə/","PIN-der","","Pindar's victory odes"],
+["t3","name","Evans","/ˈevənz/","EV-anz","Arthur Evans, excavador de Cnoso.","Evans imagined a Pax Minoica."],
+["t4","term","gladiator","/ˈɡlædieɪtə/","GLAD-ee-ay-ter","Acento en la primera sílaba.","Gladiators trained in specialised schools."],
+["t4","term","gladiatorial","/ˌɡlædiəˈtɔːriəl/","glad-ee-a-TOR-ee-al","El acento se desplaza a tor.","gladiatorial combat"],
+["t4","term","amphitheatre","/ˈæmfɪθɪətə/","AM-fi-thee-a-ter","Ph /f/ y th /θ/.","the Flavian Amphitheatre"],
+["t4","term","circus","/ˈsɜːkəs/","SUR-kus","En Roma, la pista de carreras de carros.","the Circus Maximus"],
+["t4","term","charioteer","/ˌtʃæriəˈtɪə/","cha-ree-o-TEER","El auriga.","Charioteers could become rich and famous."],
+["t4","term","thermae","/ˈθɜːmiː/","THUR-mee","Las termas.","the thermal circuit of the thermae"],
+["t4","term","venatio","/vɪˈneɪʃiəʊ/","ve-NAY-shee-oh","Latín a la inglesa; plural venationes.","Several kinds of venatio."],
+["t4","term","naumachia","/nɔːˈmeɪkiə/","naw-MAY-kee-a","Batalla naval escenificada.","naumachiae in flooded arenas"],
+["t4","term","spectators","/spekˈteɪtəz/","spek-TAY-terz","Sin e de apoyo.","the spectators in the stands"],
+["t4","term","emperor","/ˈempərə/","EM-pe-rer","Tres sílabas, acento en la primera.","The emperor paid for the games."],
+["t4","term","mosaic","/məʊˈzeɪɪk/","moh-ZAY-ik","Acento en zay.","a mosaic from Zliten, in Libya"],
+["t4","term","bread and circuses","/ˌbred ən ˈsɜːkəsɪz/","BRED n SUR-ku-siz","La and se reduce a /ən/.","Bread and circuses kept the people quiet."],
+["t4","name","Etruria","/ɪˈtrʊəriə/","e-TROO-ree-a","","Etruria and Rome"],
+["t4","name","Etruscan","/ɪˈtrʌskən/","e-TRUS-kan","La u es la de cup.","Etruscan women attended the games."],
+["t4","name","Tarquinia","/tɑːˈkwɪniə/","tar-KWIN-ee-a","","the necropolis of Tarquinia"],
+["t4","name","Colosseum","/ˌkɒləˈsiːəm/","kol-o-SEE-um","Acento en see.","the Colosseum"],
+["t4","name","Circus Maximus","/ˌsɜːkəs ˈmæksɪməs/","SUR-kus MAK-si-mus","","the Circus Maximus"],
+["t4","name","Campus Martius","/ˌkæmpəs ˈmɑːʃiəs/","KAM-pus MAR-shee-us","La ti suena /ʃ/.","exercise in the Campus Martius"],
+["t4","name","Domitian","/dəˈmɪʃən/","do-MISH-an","","Domitian's Stadium"],
+["t4","name","Flavian","/ˈfleɪviən/","FLAY-vee-an","","the Flavian Amphitheatre"],
+["t4","name","Caesar","/ˈsiːzə/","SEE-zer","La ae es /iː/ y la c, /s/.","Julius Caesar"],
+["t4","name","Mérida","/ˈmerɪdə/","MER-i-da","En inglés suele perder la tilde y el acento se mantiene.","the National Museum of Roman Art in Mérida"],
+["t5","term","martial arts","/ˌmɑːʃl ˈɑːts/","MAR-shal ARTS","La ti es /ʃ/.","Chinese martial arts"],
+["t5","term","samurai","/ˈsæmʊraɪ/","SAM-oo-ry","Igual en singular y plural.","Samurai training in archery"],
+["t5","term","sumo","/ˈsuːməʊ/","SOO-moh","","Sumo fights are short and intense."],
+["t5","term","judo","/ˈdʒuːdəʊ/","JOO-doh","La j inicial es /dʒ/.","Jigoro Kano founded judo."],
+["t5","term","jiu-jitsu","/dʒuːˈdʒɪtsuː/","joo-JIT-soo","","Jiu-jitsu was a samurai combat method."],
+["t5","term","kung fu","/ˌkʌŋ ˈfuː/","kung FOO","La u de kung es la de cup.","kung fu and the five animals"],
+["t5","term","cuju","/ˌtsuːˈdʒuː/","tsoo-JOO","Aproximación inglesa del chino.","Cuju was played by women too."],
+["t5","term","kemari","/keˈmɑːri/","ke-MAH-ree","","Kemari was a courtly ball game."],
+["t5","term","Buddhism","/ˈbʊdɪzəm/","BUD-iz-um","La u es la de put.","Buddhism reached China and Japan."],
+["t5","term","Confucianism","/kənˈfjuːʃənɪzəm/","kon-FYOO-shan-iz-um","","Confucianism shaped Chinese education."],
+["t5","term","Taoism","/ˈtaʊɪzəm/","TOW-iz-um","También /ˈdaʊɪzəm/.","Taoism and breathing exercises"],
+["t5","name","Shaolin","/ˌʃaʊˈlɪn/","show-LIN","","the Shaolin Temple"],
+["t5","name","Bodhidharma","/ˌbəʊdɪˈdɑːmə/","boh-di-DAR-ma","","Bodhidharma and the Shaolin monks"],
+["t5","name","Jigoro Kano","/dʒɪˈɡɔːrəʊ ˈkɑːnəʊ/","ji-GOR-oh KAH-noh","","Jigoro Kano's level system"],
+["t5","name","Hua Tuo","/ˌhwɑː ˈtwɔː/","hwah TWAW","","the Hua Tuo five-animal system"],
+["t5","name","Ming","/mɪŋ/","MING","","the Ming Dynasty"],
+["t5","name","Tang","/tæŋ/","TANG","","the Tang Dynasty"],
+["t5","name","Nara","/ˈnɑːrə/","NAH-ra","","the Nara period"],
+["t5","name","Indus","/ˈɪndəs/","IN-dus","","the Indus Valley"],
+["t6","term","Mesoamerican","/ˌmesəʊəˈmerɪkən/","mes-oh-a-MER-i-kan","","the Mesoamerican ball game"],
+["t6","term","court","/kɔːt/","KAWT","Una sílaba; la u y la r no suenan en británico.","the ball court at Chichen Itza"],
+["t6","term","sacrifice","/ˈsækrɪfaɪs/","SAK-ri-fice","Acento en la primera sílaba.","Were the players sacrificed?"],
+["t6","term","codex","/ˈkəʊdeks/","KOH-deks","Plural codices, /ˈkəʊdɪsiːz/.","an Aztec codex"],
+["t6","term","polytheistic","/ˌpɒliθiːˈɪstɪk/","pol-ee-thee-IS-tik","","a polytheistic religion"],
+["t6","term","messengers","/ˈmesɪndʒəz/","MES-in-jerz","","the Inca messengers"],
+["t6","term","gambling","/ˈɡæmblɪŋ/","GAM-bling","","gambling games such as patolli"],
+["t6","name","Aztec","/ˈæztek/","AZ-tek","","the Aztec empire"],
+["t6","name","Maya","/ˈmaɪə/","MY-a","El adjetivo es Mayan, /ˈmaɪən/.","the Maya"],
+["t6","name","Inca","/ˈɪŋkə/","ING-ka","","the Inca empire"],
+["t6","name","Tenochtitlan","/teɪˌnɒtʃtiːˈtlɑːn/","tay-noch-tee-TLAHN","Adaptación inglesa; en clase puedes usar la española.","Mexico-Tenochtitlan"],
+["t6","name","Moctezuma","/ˌmɒktəˈzuːmə/","mok-te-ZOO-ma","","Moctezuma's court"],
+["t6","name","Chichen Itza","/tʃiːˌtʃen iːtˈsɑː/","chee-CHEN eet-SAH","","the great ball court of Chichen Itza"],
+["t6","name","Popol Vuh","/ˌpəʊpəl ˈvuː/","POH-pol VOO","","the Popol Vuh"],
+["t6","name","Tikal","/tiːˈkɑːl/","tee-KAHL","","Tikal, in Guatemala"],
+["t6","name","Cuzco","/ˈkʊskəʊ/","KOOS-koh","","Cuzco, the Inca capital"],
+["t6","name","chasquis","/ˈtʃæskiz/","CHAS-keez","","The chasquis were relay runners."],
+["t6","name","Inti Raymi","/ˌɪnti ˈraɪmi/","IN-tee RY-mee","","the Inti Raymi festival"],
+["t6","name","Columbus","/kəˈlʌmbəs/","ko-LUM-bus","La u es la de cup.","When Christopher Columbus arrived in America..."],
+["t6","name","Bering Strait","/ˈberɪŋ ˈstreɪt/","BER-ing STRAIT","Sin e de apoyo en strait.","across the Bering Strait"],
+["t7","term","medieval","/ˌmediˈiːvl/","med-ee-EE-val","Acento en ee.","medieval Europe"],
+["t7","term","chivalry","/ˈʃɪvəlri/","SHIV-al-ree","La ch es /ʃ/.","the ideal of chivalry"],
+["t7","term","chivalric","/ʃɪˈvælrɪk/","shi-VAL-rik","","non-chivalric combat sports"],
+["t7","term","knight","/naɪt/","NITE","La k y la gh no suenan.","Knights trained from childhood."],
+["t7","term","tournament","/ˈtʊənəmənt/","TOOR-na-ment","También /ˈtɔːnəmənt/.","a tournament in King René's book"],
+["t7","term","joust","/dʒaʊst/","JOWST","Diptongo de now.","Jousting was a duel between two knights."],
+["t7","term","lance","/lɑːns/","LAHNS","","They charged with a lance."],
+["t7","term","duel","/ˈdjuːəl/","DYOO-el","","trial by combat, or duel"],
+["t7","term","feudal","/ˈfjuːdl/","FYOO-dal","","feudal society"],
+["t7","term","Byzantine","/bɪˈzæntaɪn/","bi-ZAN-tine","También /ˈbɪzəntiːn/.","the Byzantine Empire"],
+["t7","term","caber toss","/ˈkeɪbə tɒs/","KAY-ber TOSS","","the caber toss in Scotland"],
+["t7","name","Alfonso X","/ælˈfɒnsəʊ ðə ˈtenθ/","al-FON-soh the TENTH","Los ordinales de los reyes se leen con the.","Alfonso the Tenth, the Wise"],
+["t7","name","Siete Partidas","","","Puedes decirlo en castellano.","the Siete Partidas"],
+["t7","name","Theodosius","/ˌθiːəˈdəʊsiəs/","thee-o-DOH-see-us","","Theodosius the First"],
+["t7","name","Constantinople","/ˌkɒnstæntɪˈnəʊpl/","kon-stan-ti-NOH-pul","","the fall of Constantinople"],
+["t7","name","Codex Manesse","/ˈkəʊdeks məˈnesə/","KOH-deks ma-NES-a","","the Codex Manesse"],
+["t7","name","Talhoffer","/ˈtɑːlhɒfə/","TAHL-hof-er","","Hans Talhoffer's fight book"],
+["t7","name","jeu de paume","/ˌʒɜː də ˈpəʊm/","zhur de POHM","Francés; antepasado del tenis.","the jeu de paume"],
+["t7","name","soule","/suːl/","SOOL","","soule, a rural ball game"],
+["t7","name","Cumberland","/ˈkʌmbələnd/","KUM-ber-land","","Cumberland and Westmorland wrestling"],
+["t8","term","Renaissance","/rɪˈneɪsns/","ri-NAY-sans","En americano, /ˈrenəsɑːns/.","the Renaissance and physical education"],
+["t8","term","humanist","/ˈhjuːmənɪst/","HYOO-ma-nist","La h suena.","humanist pedagogues"],
+["t8","term","pedagogue","/ˈpedəɡɒɡ/","PED-a-gog","Acento en la primera sílaba.","Italian pedagogues"],
+["t8","term","treatise","/ˈtriːtɪs/","TREE-tis","«Tratado»; dos sílabas.","a treatise on gymnastics"],
+["t8","term","physician","/fɪˈzɪʃn/","fi-ZISH-an","«Médico». El «físico» es physicist.","the Italian physician Mercurialis"],
+["t8","term","fencing","/ˈfensɪŋ/","FEN-sing","«Esgrima».","Fencing was part of a gentleman's education."],
+["t8","term","calcio","/ˈkæltʃiəʊ/","KAL-chee-oh","","Florentine calcio"],
+["t8","name","Vittorino da Feltre","/ˌvɪtəˈriːnəʊ də ˈfeltreɪ/","vit-o-REE-noh da FEL-tray","","Vittorino da Feltre's school in Mantua"],
+["t8","name","Mercurialis","/ˌmɜːkjʊəriˈeɪlɪs/","mer-kyoo-ree-AY-lis","","Mercurialis, De Arte Gymnastica"],
+["t8","name","De Arte Gymnastica","/deɪ ˈɑːteɪ dʒɪmˈnæstɪkə/","day AR-tay jim-NAS-ti-ka","Latín a la inglesa.","De Arte Gymnastica, 1569"],
+["t8","name","Rabelais","/ˈræbəleɪ/","RAB-e-lay","","François Rabelais"],
+["t8","name","Montaigne","/mɒnˈteɪn/","mon-TAYN","La g no suena.","Michel de Montaigne"],
+["t8","name","Mulcaster","/ˈmʌlkæstə/","MUL-kas-ter","","Richard Mulcaster"],
+["t8","name","Elyot","/ˈeliət/","EL-ee-ot","","Thomas Elyot"],
+["t8","name","Loyola","/lɔɪˈəʊlə/","loy-OH-la","","Saint Ignatius of Loyola"],
+["t8","name","Galen","/ˈɡeɪlən/","GAY-len","","Galen's medicine"],
+["t8","name","Hippocrates","/hɪˈpɒkrətiːz/","hi-POK-ra-teez","Cuatro sílabas, acento en pok.","Hippocrates and Galen"],
+["t8","name","Florence","/ˈflɒrəns/","FLOR-ence","","the districts of Florence"],
+["t8","name","Siena","/siˈenə/","see-EN-a","","the Palio of Siena"],
+["t8","name","Mantua","/ˈmæntjuə/","MAN-tyoo-a","","Mantua"],
+["t9","term","Baroque","/bəˈrɒk/","ba-ROK","Acento en la segunda sílaba.","sport in the Baroque period"],
+["t9","term","Reformation","/ˌrefəˈmeɪʃn/","ref-or-MAY-shun","","the Reformation and the Counter-Reformation"],
+["t9","term","Protestant","/ˈprɒtɪstənt/","PROT-es-tant","Acento en la primera sílaba.","Protestants in the North"],
+["t9","term","lacrosse","/ləˈkrɒs/","la-KROS","","Indian lacrosse players"],
+["t9","term","hurling","/ˈhɜːlɪŋ/","HUR-ling","Vocal /ɜː/.","hurling in Ireland"],
+["t9","term","curling","/ˈkɜːlɪŋ/","KUR-ling","","curling on frozen lakes"],
+["t9","term","billiards","/ˈbɪliədz/","BIL-yardz","","a billiards scene from 1620"],
+["t9","term","pall-mall","/ˌpæl ˈmæl/","pal MAL","Históricamente también /ˌpel ˈmel/.","the game of pall-mall"],
+["t9","name","Comenius","/kəˈmiːniəs/","ko-MEE-nee-us","","Jan Amos Comenius"],
+["t9","name","Locke","/lɒk/","LOK","","John Locke"],
+["t9","name","Descartes","/ˈdeɪkɑːt/","DAY-kart","La s no suena.","René Descartes"],
+["t9","name","Hobbes","/hɒbz/","HOBZ","","Thomas Hobbes"],
+["t9","name","Louis XIV","/ˈluːi ðə fɔːˈtiːnθ/","LOO-ee the for-TEENTH","","Louis the Fourteenth"],
+["t9","name","Versailles","/veəˈsaɪ/","vair-SY","","the Palace of Versailles"],
+["t9","name","Cotswold","/ˈkɒtswəʊld/","KOTS-wold","","the Cotswold Games"],
+["t9","name","Luther","/ˈluːθə/","LOO-ther","Th /θ/.","Martin Luther"],
+["t9","name","Galileo","/ˌɡælɪˈleɪəʊ/","gal-i-LAY-oh","","Galileo Galilei"],
+["t9","name","Newton","/ˈnjuːtn/","NYOO-ton","","Isaac Newton"],
+["t10","term","Enlightenment","/ɪnˈlaɪtnmənt/","in-LY-ten-ment","","the Age of Enlightenment"],
+["t10","term","enlightened despotism","/ɪnˈlaɪtnd ˈdespətɪzəm/","in-LY-tend DES-po-tiz-um","","enlightened despotism"],
+["t10","term","naturalism","/ˈnætʃrəlɪzəm/","NACH-ra-liz-um","","Rousseau's naturalism"],
+["t10","term","philanthropism","/fɪˈlænθrəpɪzəm/","fi-LAN-thro-piz-um","","German philanthropism"],
+["t10","term","pedestrianism","/pəˈdestriənɪzəm/","pe-DES-tree-a-niz-um","Las carreras a pie con apuestas.","the rise of pedestrianism"],
+["t10","term","cricket","/ˈkrɪkɪt/","KRIK-it","","the origins of cricket"],
+["t10","term","Ancien Régime","/ˌɒ̃sjæ̃ reɪˈʒiːm/","ON-syan ray-ZHEEM","Francés a la inglesa.","the end of the Ancien Régime"],
+["t10","name","Rousseau","/ˈruːsəʊ/","ROO-soh","","Jean-Jacques Rousseau"],
+["t10","name","Émile","/eɪˈmiːl/","ay-MEEL","","Émile, or On Education"],
+["t10","name","Helvétius","/helˈviːʃiəs/","hel-VEE-shee-us","","Claude Adrien Helvétius"],
+["t10","name","Kant","/kænt/","KANT","","Immanuel Kant"],
+["t10","name","Basedow","/ˈbɑːzədəʊ/","BAH-ze-doh","","Basedow's Philanthropinum"],
+["t10","name","Dessau","/ˈdesaʊ/","DES-ow","","Dessau"],
+["t10","name","GutsMuths","/ˈɡuːtsmuːts/","GOOTS-moots","","Gymnastics for Youth by GutsMuths"],
+["t10","name","Pestalozzi","/ˌpestəˈlɒtsi/","pes-ta-LOT-see","","Johann Heinrich Pestalozzi"],
+["t10","name","Broughton","/ˈbrɔːtn/","BRAW-ton","La gh no suena.","Jack Broughton's rules"],
+["t10","name","Marylebone","/ˈmærələbən/","MA-ree-le-bun","Trampa clásica de pronunciación.","the Marylebone Cricket Club"],
+["t10","name","Diderot","/ˈdiːdərəʊ/","DEE-de-roh","","Diderot and d'Alembert"],
+["t10","name","Voltaire","/vɒlˈteə/","vol-TAIR","","Voltaire"],
+["t11","term","gymnastics","/dʒɪmˈnæstɪks/","jim-NAS-tiks","La g es /dʒ/.","Swedish, German and French gymnastics"],
+["t11","term","public school","/ˈpʌblɪk skuːl/","PUB-lik SKOOL","En Inglaterra es un colegio privado de élite: falso amigo.","Rugby was a public school."],
+["t11","term","fair play","/ˌfeə ˈpleɪ/","fair PLAY","","the ideal of fair play"],
+["t11","term","gentleman","/ˈdʒentlmən/","JEN-tl-man","","the gentleman amateur"],
+["t11","term","amateur","/ˈæmətə/","AM-a-ter","Acento en la primera sílaba.","the amateur ethos"],
+["t11","term","muscular Christianity","/ˈmʌskjələ ˌkrɪstiˈænəti/","MUS-kyu-la kris-tee-AN-i-tee","","muscular Christianity"],
+["t11","term","parallel bars","/ˈpærəlel bɑːz/","PA-ra-lel BARZ","","the parallel bars"],
+["t11","name","Ling","/lɪŋ/","LING","","Per Henrik Ling and Swedish gymnastics"],
+["t11","name","Amorós","","","Puedes decirlo en castellano.","Francisco Amorós"],
+["t11","name","Thomas Arnold","/ˈtɒməs ˈɑːnld/","TOM-as AR-nld","La th de Thomas es /t/.","Thomas Arnold at Rugby School"],
+["t11","name","Rugby","/ˈrʌɡbi/","RUG-bee","La u es la de cup.","Rugby School"],
+["t11","name","Napoleon","/nəˈpəʊliən/","na-POH-lee-on","","after Napoleon's victory"],
+["t11","name","Jena","/ˈjeɪnə/","YAY-na","La j alemana es /j/.","the Battle of Jena"],
+["ff","term","attend, not assist","/əˈtend/","a-TEND","«Asistir a clase» es attend class. Assist significa ayudar.","You need to attend at least sixty per cent of the classes."],
+["ff","term","actually","/ˈæktʃuəli/","AK-chu-a-lee","Significa «en realidad». «Actualmente» es currently o nowadays.","Some workshops will actually ask you to use it."],
+["ff","term","mark, not note","/mɑːk/","MARK","«La nota del examen» es the exam mark.","Your final mark is out of ten."],
+["ff","term","pass and fail","/pɑːs/ /feɪl/","PAHS · FAIL","«Aprobar» y «suspender». Approve es dar el visto bueno; suspend, expulsar temporalmente.","You can pass the exam and still fail the module."],
+["ff","term","degree, not career","/dɪˈɡriː/","di-GREE","«La carrera» es your degree.","Welcome to the first year of your degree."],
+["ff","term","reading, not lecture","/ˈriːdɪŋ/","REE-ding","Lecture es la clase magistral. Las «lecturas recomendadas» son recommended reading.","Have a look at the recommended reading."],
+["ff","term","module, not signature","/ˈmɒdjuːl/","MOD-yool","Signature es la firma.","This module follows a chronological path."],
+["ff","term","talk or paper, not conference","/tɔːk/","TAWK","Conference es el congreso; la ponencia es a talk o a paper.","I gave a talk on this at a conference last year."],
+["ff","term","sensitive, not sensible","/ˈsensətɪv/","SEN-si-tiv","Sensible significa «sensato».","Some of these topics are sensitive, so let's discuss them with respect."],
+["ff","term","physician, not physicist","/fɪˈzɪʃn/","fi-ZISH-an","Médico y físico.","Mercurialis was a physician."],
+["ff","term","ask a question","/ɑːsk ə ˈkwestʃən/","ASK a KWES-chun","Nunca make a question.","If you want to ask a question, just raise your hand."],
+["ff","term","explain it to me","","","Explain lleva to delante de la persona: explain it to me, nunca explain me.","Can you explain to the class what you mean?"],
+["ff","term","depend on","","","La preposición es on, nunca of.","Your final mark depends on both components."],
+["ff","term","people are","","","People es plural.","There are more than sixty people in this room."],
+["ff","term","in 1928, at the 1928 Games","","","Años con in; competiciones con at.","Women ran the 800 metres for the first time at the 1928 Games."],
+["class","term","Right, let's get started.","","","Para abrir la clase o volver tras una pausa.","Right, let's get started."],
+["class","term","Could I have your attention, please?","","","Pedir silencio con cortesía.","Could I have your attention, please?"],
+["class","term","Can we keep it down at the back, please?","","","Para el murmullo de las últimas filas.","Can we keep it down at the back, please?"],
+["class","term","Let me start with a question.","","","Abrir un epígrafe con una pregunta que vas a responder.","Let me start with a simple question: what is history?"],
+["class","term","What this tells us is that...","","","Pasar de la fuente a la interpretación.","What this tells us is that not everyone was allowed to compete."],
+["class","term","Bear in mind that...","","","Equivale a «tened en cuenta que».","Bear in mind that the sources from Prehistory are extremely scarce."],
+["class","term","Does that make sense so far?","","","Comprobar que te siguen.","Does that make sense so far?"],
+["class","term","Let's move on to...","","","Cambio de apartado.","Let's move on to the sources of history."],
+["class","term","That's a good question. Let me come back to it at the end.","","","Aplazar una pregunta sin cortar al alumno.","That's a good question. Let me come back to it at the end."],
+["class","term","Sorry, could you say that again a bit more slowly?","","","Para cuando un acento te cuesta.","Sorry, could you say that again a bit more slowly?"],
+["class","term","So, if I've understood you correctly, you mean...","","","Reformular lo que has entendido y ganar tiempo para pensar.","So, if I've understood you correctly, you mean that the rules were different for women?"],
+["class","term","Could you speak up a little?","","","Pedir que hablen más alto.","Could you speak up a little? I can't hear you from here."],
+["class","term","Have a look at this image. What can you see?","","","Introducir una fuente visual.","Have a look at this image. What can you see?"],
+["class","term","Take a couple of minutes to discuss this with the person next to you.","","","Breve trabajo en parejas.","Take a couple of minutes to discuss this with the person next to you."],
+["class","term","We'll pick this up next time.","","","Cerrar dejando el hilo para la próxima sesión.","We'll pick this up next time."]
+];
+const GL=GLR.map(r=>({s:r[0],k:r[1],t:r[2],ipa:r[3],st:r[4],n:r[5],ex:r[6],id:"g:"+r[0]+":"+r[2]}));
+
+const NUMS=[
+["776 BC","seven seventy-six BC","Las fechas se leen de dos en dos cifras; también seven hundred and seventy-six BC."],
+["1896","eighteen ninety-six","Año de cuatro cifras, en dos pares."],
+["1928","nineteen twenty-eight",""],
+["1967","nineteen sixty-seven",""],
+["2004","two thousand and four","Entre 2000 y 2009 se dice two thousand and…"],
+["1900","nineteen hundred",""],
+["c. 1500 BC","circa fifteen hundred BC","También around fifteen hundred BC."],
+["196 BC","one hundred and ninety-six BC","Con tres cifras se suele leer el número completo, con and."],
+["AD 80","AD eighty","AD se pronuncia /ˌeɪ ˈdiː/."],
+["the 5th century BC","the fifth century BC",""],
+["the 16th century","the sixteenth century","Acento en teen: sixTEENth."],
+["the 1920s","the nineteen-twenties",""],
+["the 1860s","the eighteen-sixties",""],
+["Louis XIV","Louis the Fourteenth","Los ordinales de los reyes llevan the."],
+["Alfonso X","Alfonso the Tenth",""],
+["Amenhotep II","Amenhotep the Second",""],
+["Henry VIII","Henry the Eighth",""],
+["4 h 20 min","four hours twenty minutes","El tiempo de Switzer en Boston."],
+["2 h 26 min","two hours twenty-six minutes",""],
+["the 800 m","the eight hundred metres","Nombre de la prueba."],
+["10.3 m/s","ten point three metres per second","En inglés el decimal es point, nunca coma."],
+["5.4 km/h","five point four kilometres an hour","Kilometres: /ˈkɪləmiːtəz/ o /kɪˈlɒmɪtəz/."],
+["60%","sixty per cent",""],
+["5.0 out of 10","five out of ten",""],
+["5.7","five point seven","La nota media."],
+["6 ECTS","six E-C-T-S credits","Se deletrea: /ˌiː siː tiː ˈes/."],
+["22,000 BC","twenty-two thousand BC","La coma separa los miles."],
+["99%","ninety-nine per cent",""],
+["2/3","two thirds","Just over two in three students pass."],
+["1/4","a quarter",""],
+["15 minutes","a quarter of an hour","El margen de cortesía."],
+["the 3rd millennium BC","the third millennium BC","Millennium: /mɪˈleniəm/."],
+["on 4 December","on the fourth of December","También December the fourth."],
+["13:00","one o'clock, or one p.m.",""],
+["1,000","a thousand","O one thousand."],
+["40,000 spectators","forty thousand spectators","Thousand sin s detrás de un número."]
+];
+const MP=[["ship","sheep","/ɪ/ breve frente a /iː/ larga"],["live","leave","/ɪ/ frente a /iː/"],["bit","beat","/ɪ/ frente a /iː/"],["full","fool","/ʊ/ frente a /uː/"],["pull","pool","/ʊ/ frente a /uː/"],["cap","cup","/æ/ frente a /ʌ/"],["hat","hut","/æ/ frente a /ʌ/"],["bad","bed","/æ/ frente a /e/"],["man","men","/æ/ frente a /e/"],["work","walk","/ɜː/ frente a /ɔː/"],["bird","board","/ɜː/ frente a /ɔː/"],["hurt","heart","/ɜː/ frente a /ɑː/"],["berry","very","/b/ frente a /v/"],["ban","van","/b/ frente a /v/"],["think","sink","/θ/ frente a /s/"],["three","tree","/θ/ frente a /t/"],["they","day","/ð/ frente a /d/"],["share","chair","/ʃ/ frente a /tʃ/"],["yet","jet","/j/ frente a /dʒ/"],["year","ear","/j/ inicial"],["hold","old","h aspirada"],["price","prize","/s/ frente a /z/"],["rice","rise","/s/ frente a /z/"],["cart","card","/t/ frente a /d/ final"],["back","bag","/k/ frente a /ɡ/ final"],["thin","thing","/n/ frente a /ŋ/"],["sport","support","sin vocal inicial"]];
+const ED=[["practised","t"],["played","d"],["competed","id"],["banned","d"],["recorded","id"],["walked","t"],["codified","d"],["worshipped","t"],["celebrated","id"],["organised","d"],["jumped","t"],["trained","d"],["hunted","id"],["ranked","t"],["ruled","d"],["depicted","id"],["raced","t"],["fenced","t"],["wrestled","d"],["needed","id"],["finished","t"],["allowed","d"],["founded","id"],["watched","t"],["admitted","id"],["believed","d"],["regulated","id"],["kicked","t"],["sacrificed","t"],["documented","id"]];
+const SW=["sport","sports","Spain","Spanish","Sparta","stadium","strength","spectator","spectacle","sprint","stone","the Stone Age","skill","school","scholar","status","structure","standard","student","study","Stockholm","Scotland","Switzer","stress"];
+const WEAK=[
+["WHAT was the FUNCtion of the GAMES?","was /wəz/, of /əv/ y the /ðə/ se reducen."],
+["You can USE it to exPLORE a TOPic, but you CAN'T let it WRITE for you.","can sin acento suena /kən/; can't lleva acento y vocal larga, /kɑːnt/."],
+["The FIRST women's EIGHT hundred METRES was RUN at the AMsterdam GAMES.","was /wəz/ y at /ət/. Amsterdam lleva el acento en la primera sílaba."],
+["MOST of the SOURces are IMages and OBjects.","of /əv/, are /ə/ y and /ən/."],
+["There's NO comPENsation beTWEEN them.","Acento contrastivo en NO."],
+["It's ONE of the OLDest SOURces we HAVE.","have al final de frase recupera su forma plena, /hæv/."],
+["Where are you FROM? I'm from SPAIN.","from al final es /frɒm/; dentro de la frase, /frəm/."],
+["WHO had ACcess to SPORT, and WHO DIDn't?","to /tə/ antes de consonante; and /ən/."],
+["We're GOing to LOOK at the SOURces FIRST.","going to tiende a /ɡənə/ en habla rápida; to /tə/."]
+];
+
+const SC=[
+ {title:"Welcome and approach",src:"Module introduction, diapositivas 1 a 5",kp:["Before we get into the content","I want to make one thing clear from the start","In practice, that means"],p:[
+ "Good morning, everyone, and welcome to History of Sport. My name is Alejandro Leiva, and I'll be your lecturer this semester. Before we get into the content, I'd like to spend today's session explaining how the module works, so that nobody is left wondering about exams, workshops or attendance later on.",
+ "History of Sport is a six-credit core module in the first semester of your first year. We'll follow a chronological path, from the earliest civilisations right up to contemporary sport. I want to make one thing clear from the start: you won't need to memorise long lists of dates and records. Our approach is socio-cultural and functional.",
+ "In practice, that means three questions will run through the whole course. Why did each society practise physical activity in its own particular way? Who had access to sport, who didn't, and why? And what did it mean for the people taking part? To answer them, we'll read the sources: images, works of art, texts and objects, paying attention to what they tell us and to what they leave out."]},
+ {title:"Assessment and attendance",src:"Module introduction, diapositivas 10 a 17",kp:["Let's move on to assessment","The key rule is this one","As for the exams","One more thing"],p:[
+ "Let's move on to assessment, which is usually what worries you most. There are two main components, the exam and the workshops. The key rule is this one. Under UCAM's assessment regulations, you need at least a five out of ten in each component before we can calculate an average. There's no compensation between them. If you get a nine in the workshops and a four in the exam, you haven't passed the module.",
+ "As for the exams, there's an eliminatory mid-term in November covering topics one to four. If you pass it, you don't have to sit that content again. The final exam, in January, covers topic five to the end, and there's a retake session in July.",
+ "One more thing, and it's important. You need to attend at least sixty per cent of the classes. If you don't, you lose the eliminatory status of the mid-term, and you'll have to retake topics one to four, even if you passed them at the time."]},
+ {title:"Workshops and artificial intelligence",src:"Module introduction, diapositivas 18 a 25",kp:["Now, the practical side of the module","A word about artificial intelligence","Whatever you use it for"],p:[
+ "Now, the practical side of the module. Throughout the semester you'll do several workshops, each linked to the topic we're covering at the time. Everything you need, the instructions, the materials and the template, will be on the Virtual Campus, so please read the instructions carefully before you start. Workshops are compulsory. You can pass the exam and still fail the module if you fail this component. And if you hand in all of them, you'll get one bonus point on your final mark, provided you've passed everything else.",
+ "A word about artificial intelligence. You're allowed to use it, and some workshops will actually ask you to. You can use it to explore a topic, to get a concept explained or to check the spelling and grammar of your own text. What you can't do is let it write the assignment, the analysis or the conclusions for you. Whatever you use it for, you must declare it on the form. And please check every reference it gives you, because AI sometimes produces sources that look perfectly real and don't exist."]},
+ {title:"Ground rules",src:"Module introduction, diapositivas 30 a 32",kp:["Before we finish, a few ground rules","is a different matter","I'd also like to stress that","Right, any questions so far?"],p:[
+ "Before we finish, a few ground rules. Laptops and tablets are welcome, because they're useful for taking notes. Mobile phones are a different matter. If I see excessive use, you'll get a warning, and if it continues, I'll ask you to leave.",
+ "In previous years we've had a problem with noise. With sixty or seventy people in a room, a few quiet conversations add up to a constant hum, and then nobody can follow the class. So this year I'm going to be firm, and it works in two steps. First, a warning. Second, I'll ask you to leave the room.",
+ "I'd also like to stress that your contributions and questions are always welcome. This is a participatory class and a multicultural degree, so every opinion has a place here, as long as it's expressed with respect. Xenophobic or sexist comments won't be tolerated. Right, any questions so far?"]},
+ {title:"What is history?",src:"Topic 1, diapositivas 4 a 9",kp:["Let's start with a simple question","A common misconception is that","Take Kathrine Switzer"],p:[
+ "Let's start with a simple question. What is history? A common misconception is that history is just an account of what happened in the past. In fact, history is an analytical tool. Historians apply a method to events that have already taken place, and the aim is to reach reasoned, critical interpretations of them. Knowing, interpreting and drawing conclusions are all part of that method.",
+ "The subject of history is the human being, both as an individual and as part of a group. Its object is every sphere of human life, from society and the economy to politics, art and, of course, sport.",
+ "Take Kathrine Switzer. In 1967 she ran the Boston Marathon, at a time when the race didn't officially admit women. A photograph of that race tells us far more than a finishing time. It tells us who was allowed to compete, and who wasn't."]},
+ {title:"Guttmann and Eichberg",src:"Topic 1, diapositivas 29 y 30",kp:["One of the most influential answers comes from","What he questioned was the yardstick","on its own terms"],p:[
+ "How do we know whether an activity counts as modern sport? One of the most influential answers comes from Allen Guttmann. In From Ritual to Record, published in 1978, he identified seven characteristics of modern sport: secularism, equality, specialisation, rationalisation, bureaucratisation, quantification and the quest for records. Some of them had precedents before the industrial era, while others appeared only with industrial society.",
+ "Henning Eichberg accepted that modern sport differs from what came before. What he questioned was the yardstick. If we measure every past society against those seven features, it always looks like an incomplete version of our own, defined by what it lacks. So, throughout this course, we'll try to understand each society on its own terms."]}
+];
+const SC2=[
+ {topic:"t2",title:"Egypt and its sources",src:"Topic 2, diapositivas 5 a 13",kp:["How do we know anything about","we have to read them with caution","Bear in mind, too, that"],p:[
+ "How do we know anything about sport in ancient Egypt? Our richest source is iconography. Tomb paintings and reliefs are the most abundant material we have, and they let us see bodies in motion: wrestlers, archers, swimmers and dancers. Official texts, such as royal stelae and monumental inscriptions, help us to date events and to put figures on them. However, we have to read them with caution, because they tend to exaggerate the feats of the king.",
+ "Bear in mind, too, that ancient Egypt had no word for sport. The closest concept was sekhemekh-ib, which literally meant to entertain the heart, or to make the heart forget. So, rather than looking for sport in our sense, we'll ask what these activities did for the people who practised them."]},
+ {topic:"t2",title:"The pharaoh ludens",src:"Topic 2, diapositivas 16 a 23",kp:["The clearest example is","is usually read as","we're reading propaganda as much as a record"],p:[
+ "At the top of Egyptian society stood the pharaoh, and his body had a political role. The clearest example is the Heb-Sed festival. Its central element was a run performed by the king himself. In the funerary complex of Djoser at Saqqara, you can still see the two markers of that race track in the Great South Court. The run is usually read as a public demonstration that the king was still fit to guarantee order.",
+ "Archery tells a similar story. The favourite discipline of royal sport was shooting at copper ingots, pieces of raw copper between two and four centimetres thick. This practice flourished in the New Kingdom with the composite bow. When an inscription tells us that the king's arrow went straight through the metal, we're reading propaganda as much as a record."]},
+ {topic:"t3",title:"Who could compete at Olympia?",src:"Topic 3, diapositivas 27 a 56",kp:["That question is the key to","for example","What this tells us is that"],p:[
+ "Who in Greece had the time and the money to practise sport? That question is the key to Olympia. Cities didn't choose their athletes, and they didn't usually pay for their journey or their training. Each athlete came on his own initiative, and some even changed their sporting homeland. The runner Astylos, for example, won first for Croton, in southern Italy, and then for Syracuse, in Sicily.",
+ "Before the Games, every candidate had to present himself at Elis and live there for thirty days with his trainer, under the supervision of the hellanodikai, the judges of the Games. The stay was at the athlete's own expense. What this tells us is that competing at Olympia was within reach of those who could afford it."]},
+ {topic:"t3",title:"The start of the race",src:"Topic 3, diapositivas 70 a 72",kp:["Let's look at how","You can still see","In other words"],p:[
+ "Let's look at how a race actually began. The runners waited in the access tunnel until they heard their name. Then they came out one by one onto the track, to the applause of their supporters and the jeers of their rivals. They took their places barefoot and standing, with their toes fitted into the two grooves of the balbis, the stone starting sill. You can still see those grooves in the stadium at Olympia today.",
+ "Later, the Greeks added a mechanical starting gate, the hysplex. It's documented at Isthmia from the second half of the fifth century BC, and from the mid-fourth century BC it worked with torsion posts and ropes at knee and waist height. In other words, false starts were already a problem worth solving."]},
+ {topic:"t4",title:"From agon to ludus",src:"Topic 4, diapositiva 16",kp:["There was a big difference between","Have a look at this painting","Even so"],p:[
+ "There was a big difference between Greek and Roman sport. For the classical Greeks, what mattered was the competition between the participants, the agon. In Rome, spectacle mattered more than anything else, and the Latin word ludus covers games, shows and play. Most Romans watched, while a few, very often slaves or condemned men, performed.",
+ "Have a look at this painting, Pollice Verso, by Jean-Léon Gérôme, from 1872. It's a nineteenth-century image, so it tells us as much about how that century imagined Rome as about Rome itself. Even so, it captures the shift we're interested in: the crowd, and not the athlete, is at the centre."]},
+ {topic:"t4",title:"Sport in Etruscan tombs",src:"Topic 4, diapositivas 3 a 11",kp:["The general view is that","These paintings also tell us about","It's likely that"],p:[
+ "The Etruscans gave sport a remarkable place in their culture. In most of the tombs that have been found, the walls show sporting scenes, which is very rare in the ancient world. The general view is that they represent contests held in honour of the dead nobleman or king buried in the tomb.",
+ "These paintings also tell us about women. Etruscan women had more freedom than Greek or, later, Roman women. They took part in banquets as dancers, they watched sporting events, and they could even act as judges. In the Tomb of the Augurs there is a darker scene, in which an executioner called Phersu whips a dog that is biting a blindfolded, condemned man. It's likely that the Etruscans were among the first to turn violence and suffering into public entertainment."]},
+ {topic:"t5",title:"Kung fu and the five animals",src:"Topic 5, diapositivas 5 a 9",kp:["has traditionally moved between two poles","According to tradition","Notice that"],p:[
+ "Chinese physical culture has traditionally moved between two poles: activities that seek peace and harmony of spirit, and competitive activities. Kung fu belongs, at least in its origins, to the first tradition. According to tradition, an Indian traveller called Bodhidharma arrived at the Shaolin temple on a pilgrimage. He noticed that the monks were exhausted after long days of meditation, so he taught them eighteen exercises.",
+ "Another system was created by the physician Hua Tuo, who lived between 145 and 208 AD. It imitated the movements of five animals, the tiger, the deer, the bear, the monkey and the crane, and its aim was to stimulate circulation and strengthen the body. Notice that we're talking about medicine and spirituality here, not about winning."]},
+ {topic:"t5",title:"Cuju and chuiwan",src:"Topic 5, diapositivas 12 a 21",kp:["is often described as","It is believed to have","It's closer to"],p:[
+ "Cuju is often described as the oldest ancestor of football. The name comes from cu, to kick, and ju, ball. It is believed to have started as a way of keeping soldiers' feet from freezing during winter campaigns. Later, matches became standardised, and there were three main forms: fields with two goals up to ten metres high, matches with a single high goal called baida, and fields with twelve semicircular goals.",
+ "China also had chuiwan, played since at least 1050 AD. Players had to hit a ball into holes dug in the ground, and the winner was the one who needed the fewest strokes. It's closer to modern putting or miniature golf than to golf itself. In paintings from the Ming dynasty, we can even see women playing it."]},
+ {topic:"t6",title:"The Mesoamerican ball game",src:"Topic 6, diapositivas 7 a 13",kp:["was the physical activity par excellence","That's why","Bear in mind that this was more than a sport"],p:[
+ "The ball game was the physical activity par excellence in Mesoamerica. Almost every culture in the region played it, and more than one thousand five hundred courts have been found, spanning more than two thousand years. It was always played on a specific court, in teams, with a solid rubber ball weighing between one and three and a half kilos. It was probably the first bouncing ball in history.",
+ "The aim was to get the ball through a stone ring, and players could hit it with their hips, forearms, elbows or knees, but never with their hands or feet. That's why they wore heavy protection made of leather and wood, such as the yoke around the hips. Bear in mind that this was more than a sport. It was a sacred, ritual practice."]},
+ {topic:"t6",title:"Who lost their head?",src:"Topic 6, diapositiva 14",kp:["The honest answer is that we don't know","There are two theories","What both theories share is"],p:[
+ "One of the questions students always ask is whether the players were sacrificed. The honest answer is that we don't know whether it was the captain of the losing team or of the winning team who was beheaded. There are two theories. If it was the losing captain, defeat was a great dishonour. If it was the winning captain, winning was a great honour, and death was an offering of life to the gods.",
+ "What both theories share is the link between the game and religion. So, rather than asking who won, we should ask what the game meant. And that brings us back to one of the three questions of this course: what did physical activity mean for the people who practised it?"]},
+ {topic:"t7",title:"A thousand years with little sport?",src:"Topic 7, diapositivas 6 a 8",kp:["Compared with","That doesn't mean","which we'll see next"],p:[
+ "Compared with the Roman Empire, the Middle Ages saw a sharp decline in organised physical activity, and we have limited information because the sources are scarce. Physical education was removed from schools, since it was considered a distraction from true spiritual education.",
+ "That doesn't mean people stopped moving. Body culture moved to popular festivals and celebrations, usually linked to the agricultural cycle, such as the harvest. Some of those rural traditions have survived to this day: think of the caber toss at the Scottish Highland Games, or the aizkolaris and segalaris of Basque rural sport. At the top of society, the nobility developed its own physical culture, which we'll see next: chivalry."]},
+ {topic:"t7",title:"Tournaments and jousts",src:"Topic 7, diapositivas 12 a 16",kp:["For many historians","Over time","followed a similar path"],p:[
+ "For many historians, tournaments were the principal sporting expression of the Middle Ages. They were simulated battles between groups of knights, and they were the most prominent festivities of the period. The first tournaments, known as the mêlée, were brutal. Over time they evolved into the so-called polite tournament, with strict rules to protect the participants and to entertain the public.",
+ "Jousting followed a similar path. It was a combat between two knights on horseback, charging at each other with lances at full gallop. At first, jousts were cruel duels, often used to settle conflicts. Later they became a polite event with a scoring system, in which each combat usually involved three or five lances."]},
+ {topic:"t8",title:"The father of physical education",src:"Topic 8, diapositivas 3 a 8",kp:["looked back to","is considered the father of","because he was the first to"],p:[
+ "The Renaissance looked back to Greece and Rome, and with them came a renewed interest in the body. Humanist pedagogues believed that a young person had to be wise in both spirit and body to face the challenges of life.",
+ "Vittorino da Feltre is considered the father of physical education, because he was the first to include it in an educational curriculum. He founded the Casa Giocosa, the House of Joy, in a villa outside Mantua donated by the Gonzaga family, and physical exercise was part of the daily education of his pupils."]},
+ {topic:"t8",title:"Mercurialis and medical gymnastics",src:"Topic 8, diapositiva 10",kp:["stood between medicine and pedagogy","which is considered the first","It's a small trap, but a very common one"],p:[
+ "In the Renaissance, physical education stood between medicine and pedagogy. The clearest example is Hieronymus Mercurialis, an Italian physician. In 1569 he published De Arte Gymnastica, On the Art of Gymnastics, which is considered the first manual on physical education and one of the most complete documents on Greek gymnastics.",
+ "His aim was to recover the medical meaning of gymnastics, drawing on ancient authors such as Galen and Hippocrates. Notice the word physician here. In English, a physician is a doctor, while a physicist studies physics. It's a small trap, but a very common one."]},
+ {topic:"t9",title:"A gap in the history of sport?",src:"Topic 9, diapositivas 5 y 6",kp:["for many historians it represents","Even so","If you remember"],p:[
+ "The seventeenth century has fewer documentary sources on sport than the sixteenth or the eighteenth, and for many historians it represents a gap in the history of sport. Some handbooks don't even deal with it. Even so, it offers some interesting changes.",
+ "After the Reformation, in northern European countries such as England or Holland, sport was actively promoted. Sports betting appeared, the nobility and the bourgeoisie took part regularly, and there was a growing concern for breaking records. If you remember Guttmann's characteristics of modern sport from Topic 1, you'll recognise some of them here."]},
+ {topic:"t9",title:"New games of the seventeenth century",src:"Topic 9, diapositivas 14 a 18",kp:["took shape in this period","another example","because of"],p:[
+ "Several games that are still played today took shape in this period. The Cotswold Games, also known as the Cotswold Olimpick Games, were founded by the lawyer Robert Dover in 1612 and held every year on the Thursday and Friday of Pentecost. They're one of the oldest sports festivals in England.",
+ "Curling is another example. Although there are earlier references, the first clear one dates from 1620. It's a Scottish game, first played on marshes and frozen ponds, and its name comes from the Scots verb curr, to turn, because of the spin the players put on the stones."]},
+ {topic:"t10",title:"Rousseau and natural education",src:"Topic 10, diapositivas 5 a 8",kp:["came to be seen as","is the key figure","went as far as"],p:[
+ "The Enlightenment, the Age of Reason, transformed education, which came to be seen as one of the main tools to enlighten society. Within this movement, naturalism argued that nature is the foundation of all knowledge, so children should return to the natural environment and learn through direct experience.",
+ "Jean-Jacques Rousseau is the key figure. His natural method went as far as proposing the abolition of schools, so that children could be educated freely and spontaneously in contact with nature. His most influential work, Émile, or On Education, was published in 1762. It tells the story of young Émile and his tutor, and it sets out an educational programme from birth to adulthood."]},
+ {topic:"t10",title:"Jovellanos and the first history of sport in Spain",src:"Topic 10, diapositivas 16 y 17",kp:["one of the key figures","It's considered the first","In a way"],p:[
+ "In Spain, one of the key figures of the Enlightenment was Gaspar Melchor de Jovellanos, a writer, jurist and politician who served as Minister of Justice under Charles the Fourth. He wanted to modernise education.",
+ "His Report on the Regulation of Public Performances and Entertainments and Their Origin in Spain is dated 1790. It's considered the first book on the history of sport in Spanish historiography, and it's also a critical analysis of the festivities of his time, of their function and of their importance in society. In a way, it follows the same functional approach we're taking in this course."]},
+ {topic:"t11",title:"Thomas Arnold and Rugby School",src:"Topic 11, diapositivas 3 a 8",kp:["Let's start with Britain","his answer was","From the schools"],p:[
+ "In the nineteenth century, four great approaches to physical exercise appeared in Europe: the British sports model, the German school, Swedish gymnastics and the French school. Let's start with Britain. The key figure is Thomas Arnold, headmaster of Rugby School between 1828 and 1842.",
+ "Arnold had a discipline problem, and his answer was self-government. He didn't invent any exercises, he didn't create a method, and he didn't write a treatise. He used the games that already existed, such as running, cricket and football, and turned them into a means of discipline. The pupils organised themselves into clubs, and from the schools these associations spread to the universities, where competitions made it necessary to unify the rules."]},
+ {topic:"t11",title:"Gentleman and fair play",src:"Topic 11, diapositivas 9 y 10",kp:["pursued three objectives","Two key words come out of","Bear in mind that"],p:[
+ "With these games Arnold pursued three objectives. The first was psycho-physical: to strengthen the body and give it an organic balance. The second was moral: through personal effort, young people would develop a sense of responsibility, self-control and respect for rules and teammates. The third was social: by organising and running their own games, they were prepared for public life.",
+ "Two key words come out of this world, gentleman and fair play. The gentleman stood for pride, effort, generosity and self-discipline. Fair play meant complying with the written rules, but also a way of playing and a loyal attitude. Bear in mind that in England a public school is an elite private school, not a state school."]}
+];
+
+SC.forEach((s,i)=>{if(!s.topic)s.topic=i<4?"intro":"t1"});SC.push(...SC2);
+SC.forEach(s=>{s.sents=s.p.map(par=>par.split(/(?<=[.?!])\s+(?=[A-Z])/))});
+
+const QS={
+ intro:["Sorry, is the mid-term exam compulsory, or can we just do the final?","If I fail the workshops but pass the exam, do I have to repeat everything?","Can we use AI to translate our answers in the workshops?","How many classes can I miss without losing the mid-term?","Are the slides going to be on the Virtual Campus before or after the class?","I'm an Erasmus student. How will my mark be converted at my home university?","I play for the university basketball team and we have matches on Thursdays. What should I do?","Is the exam multiple choice, or do we have to write long answers?","Do we have to buy the textbooks?","What happens if Turnitin flags my work but I didn't copy anything?","Can I hand in the workshop late if I'm ill?","Sorry, could you go over the bit about the grace sitting again?","Will this be in the exam?"],
+ t1:["What's the difference between a primary and a secondary source, exactly?","Is a film about the Olympics a primary or a secondary source?","Why did they think the eight hundred metres was dangerous for women?","So, was there sport in Prehistory or not?","Isn't Guttmann's list a bit Eurocentric?","What does diachronic mean again?","If the Greeks didn't have a word for sport, can we still call it sport?","How can they know how fast people were running just from footprints?","Were women really hunters too?"],
+ t2:["Did the pharaoh really run the race himself, or was it just symbolic?","How can we trust inscriptions if kings exaggerated their records?","Could ordinary Egyptians do sport, or only the elite?","Were Egyptian women allowed to take part in physical activities?"],
+ t3:["Why were Greek athletes naked?","Were women allowed to compete at Olympia?","Who paid for the athletes to go to the Games?","What happened if an athlete cheated?","Is bull-leaping the same as bullfighting in Spain?"],
+ t4:["Were gladiators always killed when they lost?","Why did the Romans prefer watching spectacles to competing themselves?","Were there female gladiators?","What was the difference between the circus and the amphitheatre?"],
+ t5:["Was cuju the origin of football?","Is sumo still connected to religion today?","Is kung fu a sport or a philosophy?","Did the samurai do any sport, or only military training?"],
+ t6:["Were the losers of the ball game sacrificed?","How heavy was the ball, and didn't it hurt?","How did the chasquis manage to run so far at that altitude?","Did the Spanish ever play the ball game?"],
+ t7:["Did peasants ever take part in tournaments?","Why did the Church oppose some games?","What's the difference between a joust and a tournament?","Is bullfighting a medieval sport?"],
+ t8:["Why is the Renaissance important if they didn't invent new sports?","Why is Vittorino called the father of physical education?","Was Florentine calcio like modern football?","Did girls get physical education in the Renaissance?"],
+ t9:["Why is the seventeenth century called a gap?","Is lacrosse an indigenous game?","Why did northern countries promote sport more?","What's the difference between pall-mall and croquet?"],
+ t10:["Was Rousseau against competition?","Why did Rousseau want to abolish schools?","What was the Philanthropinum?","Why is Jovellanos important for us in Spain?"],
+ t11:["Why did the English public schools matter so much for modern sport?","What's the difference between Swedish and German gymnastics?","Did Arnold invent rugby?","What does fair play really mean?"]
+};
+const QSAREA=Object.assign({all:"Todas las preguntas"},Object.fromEntries(Object.keys(QS).map(k=>[k,k==="intro"?"Presentación de la asignatura":TOPICS[k]])),{gen:"Generadas por Claude"});
+
+const CV=[
+ {id:"grade",title:"Reclamación de nota",who:"Marco, Erasmus italiano",lang:"it",brief:"Marco ha sacado un 4,6 en el parcial y viene a pedir que se lo subas a 5 porque le falta muy poco y necesita aprobar para su beca.",role:"Marco, an Italian Erasmus student in first year. Your English is good but with some Italian-influenced grammar. You got 4.6 out of 10 in the mid-term and you want the lecturer to raise it to 5.0 because you need it for your scholarship. You are polite but insistent, and you ask what you did wrong in part C."},
+ {id:"ext",title:"Petición de más plazo",who:"Aisha, estudiante nigeriana",lang:"en-NG",brief:"Aisha ha estado enferma y el taller se entrega mañana. Quiere saber si puede entregarlo la semana que viene.",role:"Aisha, a Nigerian first-year student. You were ill with flu for five days, you have a doctor's note, and the workshop is due tomorrow. You want an extension until next week. You are worried about losing the bonus point."},
+ {id:"plag",title:"Conversación por plagio",who:"Lucas, estudiante francés",lang:"fr",brief:"Turnitin ha marcado un 45 % de coincidencia en el taller de Lucas. Él dice que solo usó la IA para traducir.",role:"Lucas, a French student. Turnitin flagged 45% similarity in your workshop. You claim you wrote it in French and used AI to translate it, and you did not declare it on the form because you thought translating was allowed. You are a bit defensive at first."},
+ {id:"athl",title:"Deportista becado",who:"Jonas, jugador alemán de balonmano",lang:"de",brief:"Jonas compite los jueves y le preocupa no llegar al 60 % de asistencia.",role:"Jonas, a German handball player with a sports scholarship. You have matches on Thursdays and you are afraid of falling below 60% attendance and losing the mid-term. You haven't contacted your sports tutor yet."},
+ {id:"anx",title:"Alumna preocupada por el examen",who:"Mei, estudiante china",lang:"zh",brief:"Mei teme no saber escribir bien en inglés las preguntas de desarrollo del examen.",role:"Mei, a Chinese first-year student. Your English is intermediate. You are anxious about the essay part of the exam and ask whether grammar mistakes lower the mark and how to prepare."},
+ {id:"conv",title:"Conversión de la nota",who:"Emma, Erasmus irlandesa",lang:"en-IE",brief:"Emma quiere saber cómo se convierte su 6,8 y por qué en España las notas son tan bajas.",role:"Emma, an Irish Erasmus student. You got 6.8 and you're confused because at home that would look low. You ask how it converts and whether the grading is harder here. Friendly and chatty."},
+ {id:"group",title:"Conflicto en un trabajo en grupo",who:"Priya, estudiante india",lang:"en-IN",brief:"El compañero de Priya no ha hecho nada en el taller y ella no quiere que tenga la misma nota.",role:"Priya, an Indian student. Your workshop partner did nothing and you want him to get a different mark. You have messages to prove it. Firm but polite."},
+ {id:"leave",title:"Alumno al que pides que salga",who:"Daniel, estudiante español",lang:"es",brief:"Tras el primer aviso, Daniel sigue hablando. Le pides que salga y protesta.",role:"Daniel, a Spanish student in the English-taught group. You were warned once for talking and now the lecturer asks you to leave. You protest that you were only asking your classmate about the slides. Slightly annoyed but not rude."},
+ {id:"conf1",title:"Congreso: pregunta sobre el enfoque funcional",who:"Profesora británica",lang:"en-GB",brief:"Tras tu ponencia, una colega británica cuestiona que el enfoque funcional sea demasiado vago.",role:"A senior British sport historian at a conference, after the lecturer's talk on the social functions of physical practices. You challenge him: isn't a functional approach too vague, since almost anything can be said to have a social function? Courteous but sharp. Follow up on his answer."},
+ {id:"conf2",title:"Congreso: los cronistas como fuente",who:"Profesor estadounidense",lang:"en-US",brief:"Un colega pregunta cómo se puede confiar en los cronistas españoles para describir prácticas indígenas.",role:"An American historian of colonial Latin America at a conference. The speaker presented physical practices in the Spanish chronicles of the Indies. Ask how he can trust Spanish chroniclers, who had their own agendas, to describe indigenous practices. Then follow up on what he says."},
+ {id:"conf3",title:"Congreso: validar el método con IA",who:"Investigadora neerlandesa",lang:"nl",brief:"Una investigadora pregunta cómo validas lo que el modelo de lenguaje extrae de las crónicas.",role:"A Dutch digital humanities researcher at a conference. The speaker used a large language model to help read a corpus of chronicles. Ask how he validates what the model extracts, and whether the model can hallucinate passages. Precise, technical, friendly."},
+ {id:"conf4",title:"Congreso: sesgo de la prensa",who:"Profesora australiana",lang:"en-AU",brief:"Una colega pregunta si la prensa española de 1750 a 1936 no refleja solo a las mujeres de la élite.",role:"An Australian gender historian at a conference. The speaker studies women and sport in the Spanish press between 1750 and 1936. Ask whether the press only shows elite and urban women, and how he deals with that bias."}
+];
+
+const HEDGE=[
+["We know for certain that…","We know for certain that women ran the 800 metres at the 1928 Games."],
+["The evidence clearly shows that…","The evidence clearly shows that gladiators trained in specialised schools."],
+["It is very likely that…","It is very likely that these games had a religious meaning."],
+["The evidence suggests that…","The evidence suggests that the leapers of Knossos were young members of the elite."],
+["It seems that… / It appears that…","It appears that the figure is running, although it could also be dancing."],
+["This could be interpreted as…","This object could be interpreted as a toy, a votive offering or a tool."],
+["We can't rule out that…","We can't rule out that the scene shows a dance rather than a race."],
+["There is little evidence for…","There is little evidence for organised sport in Prehistory."],
+["We simply don't know…","We simply don't know the rules of the game."],
+["Scholars disagree on…","Scholars disagree on whether modern sport has pre-industrial precedents."],
+["This view has been challenged by…","Guttmann's view has been challenged by Henning Eichberg."],
+["According to…","According to Huizinga, play is older than culture."]
+];
+const DESCR=[
+["This is a … from …, dated to around …","This is a wall painting from the Tomb of the Augurs, dated to around 530 BC."],
+["In the foreground / In the background","In the foreground we can see two wrestlers."],
+["On the left / On the right / In the centre","On the left, a referee is holding a stick."],
+["… is shown / depicted + -ing","The man is depicted running, or perhaps dancing."],
+["Notice how…","Notice how the leaper is shown in mid-air above the bull."],
+["What strikes me here is…","What strikes me here is the size of the audience."],
+["Who commissioned it, and why?","It's always worth asking who commissioned it, and why."],
+["What does this tell us about…?","What does this tell us about the role of women?"],
+["The image doesn't tell us…","The image doesn't tell us who the spectators were."]
+];
+const SRCS=[["t1","Tomb of Rekhmire, Egypt: giraffe (c. 1500 BC)"],["t1","Bison carved in bone, Russia (22,000 BC)"],["t1","Honey gathering, Cueva de la Araña, Bicorp (Levantine rock art)"],["t1","Hunting scene, Barranco de la Valltorta, Castellón"],["t1","Photograph of Kathrine Switzer at the 1967 Boston Marathon"],["t2","Wrestlers in the tombs of the nomarchs at Beni Hasan (c. 2000 BC)"],["t2","Stick-fencing bout on a limestone ostracon from Deir el-Medina (Louvre)"],["t2","Funerary complex of Djoser at Saqqara, with the Heb-Sed markers"],["t3","Boxer Rhyton from Hagia Triada, Crete"],["t3","Bull-leaping fresco from Knossos"],["t3","Attic black-figure vases: runners in a perizoma and naked runners"],["t3","Jumper with halteres on a red-figure cup"],["t3","The balbis, the starting line of the stadium at Olympia"],["t4","Tomb of the Augurs, Tarquinia: man running or dancing (c. 530 to 520 BC)"],["t4","Pollice Verso by Jean-Léon Gérôme (1872)"],["t5","Women playing chuiwan in the Ming Dynasty"],["t6","Plan of the ball court at Chichen Itza"],["t7","Knight with his squire, Codex Manesse (1305 to 1315)"],["t7","Representation of a tournament in King René d'Anjou's book (c. 1460)"],["t8","The Vitruvian Man by Leonardo da Vinci (1492)"],["t9","Lithograph by George Catlin showing lacrosse players"],["t9","Billiards scene by Adrien Pietersz (1620)"]];
+const TENSES=[
+["Pasado simple","Hechos terminados y fechados.","Huizinga published Homo Ludens in 1938."],
+["Pasado perfecto","Lo anterior a otro momento del pasado.","When Columbus arrived, the ball game had been played for centuries."],
+["would + infinitivo","Hábitos repetidos en una sociedad pasada.","On feast days, villagers would play soule."],
+["used to + infinitivo","Hábitos o estados que ya no se dan.","Gladiators used to be slaves or prisoners of war."],
+["Presente perfecto","Del pasado hasta hoy, sobre todo en historiografía.","Historians have long assumed that hunting was a male activity."],
+["Presente histórico","Para narrar con viveza una escena o una fuente.","In the Iliad, Achilles organises funeral games for Patroclus."]
+];
+const TQ=[
+["By the time the Romans conquered Greece, the Olympic Games ___ for more than five centuries.",["had been held","were held","have been held"],0,"Pasado perfecto: algo anterior a otro momento del pasado."],
+["In medieval villages, people ___ play soule on feast days.",["would","were used to","had"],0,"would para hábitos repetidos."],
+["Kathrine Switzer ___ the race in four hours and twenty minutes.",["finished","has finished","had finished"],0,"Pasado simple: hecho terminado y fechado."],
+["Women ___ officially allowed to run the Boston Marathon until 1972.",["were not","have not been","did not"],0,"Pasiva en pasado simple."],
+["The Greeks ___ have a word for sport.",["didn't","hadn't","weren't"],0,"Negación del pasado simple con did."],
+["Gladiators ___ be slaves, prisoners of war or condemned criminals, although some were volunteers.",["used to","would to","had to"],0,"used to para un estado habitual del pasado."],
+["When Columbus arrived, the ball game ___ in Mesoamerica for centuries.",["had been played","was played","has been played"],0,"Pasado perfecto con for."],
+["Historians ___ long ___ that hunting was a male activity, but recent studies challenge this.",["have / assumed","had / assumed","did / assume"],0,"Presente perfecto: del pasado hasta hoy."],
+["Huizinga ___ Homo Ludens in 1938.",["published","has published","had published"],0,"Con una fecha concreta, pasado simple."],
+["In the Iliad, Achilles ___ funeral games for Patroclus.",["organises","organised","has organised"],0,"Presente histórico al resumir una obra; organised también sería correcto."]
+];
+
+/* ================= STATE (db with local fallback) ================= */
+let ST={srs:{},scores:{dict:[],listen:[],mp:[0,0],ed:[0,0]},errors:[],gen:[],days:{}};
+let dbRef=null,saveT=null;
+function lsGet(){try{return JSON.parse(localStorage.getItem("lab.state")||"null")}catch(e){return null}}
+function lsSet(){try{localStorage.setItem("lab.state",JSON.stringify(ST))}catch(e){}}
+function merge(o){if(o&&typeof o==="object"){ST=Object.assign(ST,o);ST.scores=Object.assign({dict:[],listen:[],mp:[0,0],ed:[0,0]},ST.scores||{})}}
+merge(lsGet());
+try{const old=JSON.parse(localStorage.getItem("lab.log")||"[]");if(old.length&&!ST.errors.length)ST.errors=old}catch(e){}
+function save(){lsSet();clearTimeout(saveT);saveT=setTimeout(()=>{if(dbRef)dbRef.set(JSON.parse(JSON.stringify(ST))).catch(()=>{})},1500)}
+function today(){return new Date().toISOString().slice(0,10)}
+function bump(k){const d=today();ST.days[d]=ST.days[d]||{};ST.days[d][k]=(ST.days[d][k]||0)+1}
+(async()=>{try{if(!window.claude||!window.claude.use)return;const db=await window.claude.use("db");if(!db)return;dbRef=db.doc("lab/state");const s=await dbRef.get();if(s.exists){merge(s.data());lsSet();renderAllState()}else{save()}}catch(e){}})();
+
+/* ================= SPEECH ================= */
+const synth=window.speechSynthesis;
+let voices=[],rate=1,randomAccent=false,queueToken=0,lastVoice=null;
+const L2={zh:"Chino",ja:"Japonés",ko:"Coreano",ar:"Árabe",he:"Hebreo",fa:"Persa",tr:"Turco",hi:"Hindi",ur:"Urdu",bn:"Bengalí",ta:"Tamil",th:"Tailandés",vi:"Vietnamita",id:"Indonesio",ms:"Malayo",fil:"Filipino",it:"Italiano",fr:"Francés",de:"Alemán",pt:"Portugués",ru:"Ruso",pl:"Polaco",nl:"Neerlandés",el:"Griego",sv:"Sueco",nb:"Noruego",no:"Noruego",da:"Danés",fi:"Finés",es:"Español",ca:"Catalán",uk:"Ucraniano",ro:"Rumano",cs:"Checo",hu:"Húngaro",sk:"Eslovaco",hr:"Croata",bg:"Búlgaro",sw:"Suajili",af:"Afrikáans",zu:"Zulú",am:"Amhárico"};
+const ENREG={GB:["Reino Unido","bri"],US:["Estados Unidos","nam"],CA:["Canadá","nam"],IE:["Irlanda","bri"],AU:["Australia","oce"],NZ:["Nueva Zelanda","oce"],IN:["India","sas"],PK:["Pakistán","sas"],LK:["Sri Lanka","sas"],ZA:["Sudáfrica","afr"],NG:["Nigeria","afr"],KE:["Kenia","afr"],TZ:["Tanzania","afr"],GH:["Ghana","afr"],SG:["Singapur","eas"],PH:["Filipinas","eas"],HK:["Hong Kong","eas"],MY:["Malasia","eas"],JM:["Jamaica","nam"],MT:["Malta","eur"]};
+const L2GRP={zh:"eas",ja:"eas",ko:"eas",th:"eas",vi:"eas",id:"eas",ms:"eas",fil:"eas",ar:"mea",he:"mea",fa:"mea",tr:"mea",hi:"sas",ur:"sas",bn:"sas",ta:"sas",sw:"afr",af:"afr",zu:"afr",am:"afr"};
+const GRPN={bri:"Islas Británicas e Irlanda",nam:"Norteamérica y Caribe",oce:"Australia y Nueva Zelanda",afr:"África",sas:"India y Asia del Sur",eas:"Asia oriental y sudeste",mea:"Oriente Medio",eur:"Europa continental"};
+const GRPORD=["bri","nam","oce","afr","sas","eas","mea","eur"];
+let enabledGroups=new Set(GRPORD),includeL2=true;
+function classify(v){
+  const lang=(v.lang||"").replace("_","-");const [l,r]=[lang.split("-")[0].toLowerCase(),(lang.split("-")[1]||"").toUpperCase()];
+  if(l==="en"){
+    if(/fiona|scot/i.test(v.name)||/scotland|sct/i.test(lang))return {v,acc:"Escocia",grp:"bri",l2:false};
+    if(/wales|cymr/i.test(lang))return {v,acc:"Gales",grp:"bri",l2:false};
+    const e=ENREG[r]||[r||"inglés","nam"];return {v,acc:e[0],grp:e[1],l2:false};
+  }
+  if(L2[l])return {v,acc:L2[l]+" (aprox.)",grp:L2GRP[l]||"eur",l2:true};
+  return null;
+}
+let VC=[];
+function cleanName(n){return n.replace(/^(Microsoft|Google)\s+/,"").replace(/\s*Online\s*\(Natural\)/,"").replace(/\s*\(.*?\)/g,"").replace(/\s+-\s+.*$/,"").trim()}
+function fillVoices(){
+  if(!synth){$("voice").innerHTML='<option>Sin síntesis de voz</option>';showVoiceWarn(true);return}
+  voices=synth.getVoices();VC=voices.map(classify).filter(Boolean);
+  const en=VC.filter(c=>!c.l2);
+  if(!en.length){$("voice").innerHTML='<option>Sin voces inglesas</option>';showVoiceWarn(true);$("now").textContent=voices.length?"No hay voces inglesas disponibles aquí.":"Buscando voces…";return}
+  showVoiceWarn(false);
+  const sel=$("voice");const groups={};VC.forEach((c,i)=>{(groups[c.grp]=groups[c.grp]||[]).push([c,i])});
+  sel.innerHTML=GRPORD.filter(g=>groups[g]).map(g=>`<optgroup label="${GRPN[g]}">${groups[g].sort((a,b)=>a[0].l2-b[0].l2).map(([c,i])=>`<option value="${i}">${esc(cleanName(c.v.name))} · ${esc(c.acc)}</option>`).join("")}</optgroup>`).join("");
+  let saved=null;try{saved=localStorage.getItem("lab.voice")}catch(e){}
+  let idx=VC.findIndex(c=>c.v.name===saved);if(idx<0)idx=VC.findIndex(c=>c.acc==="Reino Unido");if(idx<0)idx=VC.findIndex(c=>!c.l2);
+  sel.value=idx;
+  const nEn=en.length,nL2=VC.length-nEn,regs=new Set(en.map(c=>c.acc));
+  $("now").textContent=`${nEn} voces inglesas (${regs.size} variedades) y ${nL2} de otros idiomas.`;
+  renderAccPanel(groups);
+}
+function showVoiceWarn(on){const w=$("voicewarn");w.hidden=!on;if(on)w.innerHTML='<div class="warn">Este visor no ofrece voces inglesas, así que el sistema leería el inglés con la voz española. Abre la página en Chrome, Safari o, mejor aún, en Microsoft Edge, que trae acentos de Nigeria, Kenia, Singapur, Filipinas, India o Irlanda. En el Mac también puedes descargar voces inglesas en Ajustes del Sistema, Accesibilidad, Contenido leído.</div>'}
+function renderAccPanel(groups){
+  $("accpanel").innerHTML=GRPORD.filter(g=>groups[g]).map(g=>`<label><input type="checkbox" data-g="${g}" ${enabledGroups.has(g)?"checked":""}> ${GRPN[g]} <span class="muted small">(${groups[g].length})</span></label>`).join("")+`<label><input type="checkbox" id="incL2" ${includeL2?"checked":""}> Incluir voces de otros idiomas leyendo inglés <span class="muted small">(aproximación al acento de un hablante no nativo)</span></label>`;
+}
+$("accpanel").addEventListener("change",e=>{const g=e.target.dataset.g;if(g){e.target.checked?enabledGroups.add(g):enabledGroups.delete(g)}if(e.target.id==="incL2")includeL2=e.target.checked});
+$("accbtn").onclick=()=>{const p=$("accpanel");p.hidden=!p.hidden;$("accbtn").setAttribute("aria-expanded",!p.hidden)};
+if(synth){fillVoices();synth.onvoiceschanged=fillVoices;let tries=0;const iv=setInterval(()=>{tries++;if(VC.some(c=>!c.l2)||tries>12){clearInterval(iv);if(!VC.length)fillVoices()}else fillVoices()},500)}else fillVoices();
+$("voice").addEventListener("change",()=>{const c=VC[+$("voice").value];if(c)try{localStorage.setItem("lab.voice",c.v.name)}catch(e){}});
+function randomVoice(){
+  let pool=VC.filter(c=>enabledGroups.has(c.grp)&&(includeL2||!c.l2));if(!pool.length)pool=VC.filter(c=>!c.l2);if(!pool.length)return null;
+  const accs=[...new Set(pool.map(c=>c.acc))];const a=pick(accs);return pick(pool.filter(c=>c.acc===a));
+}
+function voiceForLang(lang){
+  const L=lang.toLowerCase();let c=VC.find(x=>x.v.lang.toLowerCase().replace("_","-")===L);
+  if(!c)c=VC.find(x=>x.v.lang.toLowerCase().startsWith(L.split("-")[0])&&(L.startsWith("en")?true:x.l2));
+  return c||randomVoice();
+}
+function currentVoice(){return randomAccent?randomVoice():(VC[+$("voice").value]||VC.find(c=>!c.l2)||null)}
+function freshVoice(c){if(!c)return null;const list=synth.getVoices();return list.find(v=>v.name===c.v.name&&v.lang===c.v.lang)||c.v}
+function speak(text,o={}){
+  if(!synth)return null;
+  const c=o.vc||currentVoice();
+  if(!c){showVoiceWarn(true);return null}
+  const u=new SpeechSynthesisUtterance(text);u.voice=freshVoice(c);u.lang=c.v.lang;u.rate=o.rate||rate;
+  u.onend=()=>o.onend&&o.onend();u.onerror=()=>o.onend&&o.onend();
+  if(!o.silent)$("now").innerHTML=`Suena: <b>${esc(cleanName(c.v.name))}</b> · ${esc(c.acc)}`;
+  synth.speak(u);lastVoice=c;return c;
+}
+function stopAll(){queueToken++;if(synth)synth.cancel();document.querySelectorAll(".sent.on").forEach(e=>e.classList.remove("on"))}
+function say(text,o){stopAll();return speak(text,o)}
+$("stop").onclick=stopAll;
+document.querySelectorAll("#rate button").forEach(b=>b.onclick=()=>{rate=+b.dataset.r;document.querySelectorAll("#rate button").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+$("rnd").onclick=()=>{randomAccent=!randomAccent;$("rnd").setAttribute("aria-pressed",randomAccent)};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)say(b.dataset.say)});
+
+/* ================= TABS ================= */
+const TABS=[["hoy","Hoy"],["gl","Glosario"],["pr","Pronunciación"],["sc","Guiones"],["qs","Preguntas de alumnos"],["pod","Pódcast"],["cv","Conversación"],["hi","Lenguaje del historiador"],["rv","Repaso"],["dx","Diagnóstico"]];
+$("tabs").innerHTML=TABS.map(([k,l],i)=>`<button role="tab" data-t="${k}" aria-selected="false"><span class="n">${i+1}</span>${l}</button>`).join("");
+function showTab(k){document.querySelectorAll("[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t===k));document.querySelectorAll("section[data-tab]").forEach(s=>s.hidden=s.dataset.tab!==k);try{localStorage.setItem("lab.tab",k)}catch(e){}if(k==="rv")renderReview()}
+$("tabs").addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(b)showTab(b.dataset.t)});
+let st0="gl";try{st0=localStorage.getItem("lab.tab")||"gl"}catch(e){}
+
+/* ================= 1 GLOSSARY ================= */
+const topicOpts=keys=>keys.map(k=>`<option value="${k}">${esc(TOPICS[k]||k)}</option>`).join("");
+$("glTopic").innerHTML='<option value="all">Todos los temas</option>'+topicOpts(Object.keys(TOPICS));
+let glKind="all";
+const sayable=e=>e.t.replace(/,? not .*$/,"").replace(/ vs .*/,"");
+function rowHTML(e){return `<div class="row">
+  <div><div class="tag">${esc(TOPICS[e.s]||"")}${e.k==="name"?" · nombre":""}</div><div class="term">${esc(e.t)}</div>${e.ipa?`<div class="ipa">${esc(e.ipa)}</div>`:""}${e.st?`<div class="stress">${esc(e.st)}</div>`:""}</div>
+  <div>${e.n?`<div class="note">${esc(e.n)}</div>`:""}${e.ex&&e.s!=="class"?`<div class="ex">${esc(e.ex)}</div>`:""}</div>
+  <div class="acts">${e.s!=="class"&&e.s!=="ff"?`<button data-say="${esc(sayable(e))}">${PLAY}Término</button>`:""}${e.ex?`<button data-say="${esc(e.ex)}">${PLAY}${e.s==="class"?"Oír":"Frase"}</button>`:""}${e.s!=="class"&&e.s!=="ff"&&e.ipa?`<a class="yg" href="https://youglish.com/pronounce/${encodeURIComponent(sayable(e))}/english" target="_blank" rel="noopener">Vídeos reales</a>`:""}</div></div>`}
+function renderGl(){
+  const t=$("glTopic").value,q=$("q").value.trim().toLowerCase();
+  const rows=GL.filter(e=>(t==="all"||e.s===t)&&(glKind==="all"||e.k===glKind)&&(!q||(e.t+e.n+e.ex).toLowerCase().includes(q)));
+  $("gl").innerHTML=rows.map(rowHTML).join("")||'<p class="muted" style="padding:14px 16px">Ningún término coincide.</p>';
+  $("glAdd").disabled=t==="all";
+}
+$("glTopic").onchange=renderGl;$("q").oninput=renderGl;
+document.querySelectorAll("button[data-k]").forEach(b=>b.onclick=()=>{glKind=b.dataset.k;document.querySelectorAll("button[data-k]").forEach(x=>x.setAttribute("aria-pressed",x===b));renderGl()});
+$("glAdd").onclick=()=>{const t=$("glTopic").value;let n=0;GL.filter(e=>e.s===t).forEach(e=>{if(!ST.srs[e.id]){ST.srs[e.id]={b:0,due:0};n++}});save();$("glAdd").textContent=n?`Añadidas ${n} tarjetas`:"Ya estaban en el repaso";setTimeout(()=>$("glAdd").textContent="Añadir este tema al repaso",2500)};
+renderGl();
+
+/* ================= 2 PRONUNCIATION ================= */
+let numI=0;const numOrder=shuffle(NUMS.map((_,i)=>i));
+function showNum(){const n=NUMS[numOrder[numI]];$("numW").textContent=n[0];$("numS").hidden=true;$("numS").innerHTML=`<span class="big" style="font-size:1.25rem">${esc(n[1])}</span>${n[2]?`<div class="muted">${esc(n[2])}</div>`:""}`;$("numPos").textContent=`${numI+1} de ${NUMS.length}`}
+$("numShow").onclick=()=>{$("numS").hidden=false;say(NUMS[numOrder[numI]][1])};
+$("numNext").onclick=()=>{numI=(numI+1)%NUMS.length;showNum()};
+$("numTable").innerHTML=NUMS.map(n=>`<tr><td><b>${esc(n[0])}</b></td><td>${esc(n[1])}</td><td><button data-say="${esc(n[1])}" aria-label="Oír">${PLAY}</button></td></tr>`).join("");
+showNum();
+let mpCur=null;
+function mpTally(){const [a,t]=ST.scores.mp;$("mpTally").textContent=t?`${a} de ${t} aciertos`:""}
+$("mpPlay").onclick=()=>{const p=pick(MP);const which=Math.random()<.5?0:1;mpCur={p,which,done:false,vc:currentVoice()};$("mpNote").textContent="";
+  $("mpOpts").innerHTML=shuffle([0,1]).map(i=>`<button data-mp="${i}">${esc(p[i])}</button>`).join("");stopAll();speak(p[which],{vc:mpCur.vc,silent:randomAccent})};
+$("mpAgain").onclick=()=>{if(mpCur){stopAll();speak(mpCur.p[mpCur.which],{vc:mpCur.vc,silent:randomAccent})}};
+$("mpOpts").addEventListener("click",e=>{const b=e.target.closest("[data-mp]");if(!b||!mpCur||mpCur.done)return;mpCur.done=true;const ok=+b.dataset.mp===mpCur.which;
+  ST.scores.mp[1]++;if(ok)ST.scores.mp[0]++;bump("mp");save();mpTally();
+  $("mpOpts").querySelectorAll("button").forEach(x=>{if(+x.dataset.mp===mpCur.which)x.classList.add("right");else if(x===b)x.classList.add("wrong")});
+  $("mpNote").innerHTML=`${ok?"Correcto.":"Era <b>"+esc(mpCur.p[mpCur.which])+"</b>."} Contraste: ${esc(mpCur.p[2])}. Voz: ${esc(mpCur.vc?mpCur.vc.acc:"")}. <button data-say="${esc(mpCur.p[0])}">${PLAY}${esc(mpCur.p[0])}</button> <button data-say="${esc(mpCur.p[1])}">${PLAY}${esc(mpCur.p[1])}</button>`});
+$("mpAll").innerHTML=MP.map(p=>`<button data-say="${esc(p[0])}">${esc(p[0])}</button><button data-say="${esc(p[1])}">${esc(p[1])}</button>`).join("");
+mpTally();
+let edCur=null;
+function edTally(){const [a,t]=ST.scores.ed;$("edTally").textContent=t?`${a} de ${t} aciertos`:""}
+function edNext(){edCur={w:pick(ED),done:false};$("edW").textContent=edCur.w[0];$("edNote").textContent="";$("edOpts").querySelectorAll("button").forEach(b=>b.className="")}
+$("edNext").onclick=edNext;
+$("edOpts").addEventListener("click",e=>{const b=e.target.closest("[data-e]");if(!b||!edCur||edCur.done)return;edCur.done=true;const ok=b.dataset.e===edCur.w[1];
+  ST.scores.ed[1]++;if(ok)ST.scores.ed[0]++;bump("ed");save();edTally();
+  $("edOpts").querySelectorAll("button").forEach(x=>{if(x.dataset.e===edCur.w[1])x.classList.add("right");else if(x===b)x.classList.add("wrong")});
+  const lab={t:"/t/",d:"/d/",id:"/ɪd/ (sílaba extra)"}[edCur.w[1]];$("edNote").innerHTML=`${ok?"Correcto":"Es "+lab}. ${edCur.w[1]==="id"?"Tras t o d se añade una sílaba.":edCur.w[1]==="t"?"Tras sonido sordo (p, k, s, f, sh, ch) suena /t/.":"Tras sonido sonoro suena /d/."} <button data-say="${esc(edCur.w[0])}">${PLAY}Oír</button>`;say(edCur.w[0])});
+edNext();edTally();
+$("sWords").innerHTML=SW.map(w=>`<button data-say="${esc(w)}">${PLAY}${esc(w)}</button>`).join("");
+$("weak").innerHTML=WEAK.map(w=>`<div class="fix"><div style="display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap"><span style="font-family:var(--f-read);font-size:1.05rem">${esc(w[0])}</span><button data-say="${esc(w[0].toLowerCase().replace(/^./,c=>c.toUpperCase()))}">${PLAY}Oír</button></div><div class="small muted">${esc(w[1])}</div></div>`).join("");
+const NMT=[...new Set(GL.filter(e=>e.k==="name").map(e=>e.s))];
+$("nmTopic").innerHTML=topicOpts(NMT);
+function renderNames(){const t=$("nmTopic").value;$("nm").innerHTML=GL.filter(e=>e.k==="name"&&e.s===t).map(rowHTML).join("")}
+$("nmTopic").onchange=renderNames;renderNames();
+
+/* ================= 3 SCRIPTS ================= */
+$("scripts").innerHTML=SC.map((s,si)=>`<article class="card" data-topic="${s.topic}">
+   <header><h3>${esc(s.title)}</h3><span class="src">${esc(s.src)}</span></header>
+   <div class="ctrl"><button class="primary" data-act="all" data-s="${si}">${PLAY}Escuchar entero</button><button data-act="shadow" data-s="${si}">${PLAY}Modo sombra</button><button data-act="blur" data-s="${si}" aria-pressed="false">Ocultar texto</button></div>
+   <div class="text" id="tx-${si}">${s.sents.map((par,pi)=>`<p>${par.map((x,xi)=>`<span class="sent" tabindex="0" data-k="${pi}-${xi}">${esc(x)}</span>`).join(" ")}</p>`).join("")}</div>
+   <div class="tag">Frases útiles</div><div class="kp">${s.kp.map(k=>`<button data-say="${esc(k)}">${PLAY}${esc(k)}</button>`).join("")}</div></article>`).join("");
+function flat(si){const out=[];SC[si].sents.forEach((par,pi)=>par.forEach((x,xi)=>out.push({x,k:pi+"-"+xi})));return out}
+function playSeq(si,shadow){
+  stopAll();const tok=queueToken;const list=flat(si);const vc=currentVoice();let i=0;
+  const step=()=>{if(tok!==queueToken)return;document.querySelectorAll(`#tx-${si} .sent`).forEach(e=>e.classList.remove("on"));
+    if(i>=list.length){$("now").textContent="Fin del guion.";return}
+    const it=list[i++];const el=document.querySelector(`#tx-${si} [data-k="${it.k}"]`);el&&el.classList.add("on");
+    speak(it.x,{vc,onend:()=>{if(tok!==queueToken)return;if(shadow){el&&el.classList.remove("on");$("now").textContent="Tu turno: repite la frase.";setTimeout(step,Math.max(1800,it.x.split(/\s+/).length*480/rate))}else step()}})};
+  step();
+}
+$("scripts").addEventListener("click",ev=>{
+  const b=ev.target.closest("button[data-act]");const sp=ev.target.closest(".sent");
+  if(b&&b.dataset.act==="all")playSeq(+b.dataset.s,false);
+  else if(b&&b.dataset.act==="shadow")playSeq(+b.dataset.s,true);
+  else if(b&&b.dataset.act==="blur"){const t=$("tx-"+b.dataset.s);const on=t.classList.toggle("blur");b.setAttribute("aria-pressed",on);b.textContent=on?"Mostrar texto":"Ocultar texto"}
+  else if(sp){stopAll();sp.classList.add("on");speak(sp.textContent,{onend:()=>sp.classList.remove("on")})}
+});
+$("scripts").addEventListener("keydown",ev=>{const sp=ev.target.closest(".sent");if(sp&&(ev.key==="Enter"||ev.key===" ")){ev.preventDefault();sp.click()}});
+
+/* ================= shared: diff & Claude ================= */
+const NUMW={"one":"1","two":"2","three":"3","four":"4","five":"5","six":"6","seven":"7","eight":"8","nine":"9","ten":"10","sixty":"60","seventy":"70","percent":"per cent"};
+function toks(s){return s.toLowerCase().replace(/[’']/g,"'").replace(/percent/g,"per cent").replace(/[^a-z0-9'\s-]/g," ").replace(/-/g," ").split(/\s+/).filter(Boolean).map(w=>NUMW[w]||w)}
+function lcs(a,b){const m=a.length,n=b.length,d=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+  for(let i=m-1;i>=0;i--)for(let j=n-1;j>=0;j--)d[i][j]=a[i]===b[j]?d[i+1][j+1]+1:Math.max(d[i+1][j],d[i][j+1]);
+  const ops=[];let i=0,j=0;while(i<m&&j<n){if(a[i]===b[j]){ops.push(["=",a[i]]);i++;j++}else if(d[i+1][j]>=d[i][j+1]){ops.push(["-",a[i]]);i++}else{ops.push(["+",b[j]]);j++}}
+  while(i<m)ops.push(["-",a[i++]]);while(j<n)ops.push(["+",b[j++]]);return ops}
+function diffHTML(target,said){
+  const ops=lcs(toks(target),toks(said));const total=ops.filter(o=>o[0]!=="+").length;const ok=ops.filter(o=>o[0]==="=").length;const pct=total?Math.round(ok/total*100):0;
+  const missed=[...new Set(ops.filter(o=>o[0]==="-").map(o=>o[1]))];
+  return {pct,missed,html:`<div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-top:6px"><span class="score">${pct}%</span><span class="muted small">de palabras coincidentes</span></div>
+   <div class="diff">${ops.map(([t,w])=>t==="="?esc(w):t==="-"?`<span class="w-miss">${esc(w)}</span>`:`<span class="w-extra">[${esc(w)}]</span>`).join(" ")}</div>
+   <p class="legend">Subrayado ondulado, palabra que falta o no se reconoció. Entre corchetes y en cursiva, lo que apareció en su lugar.</p>`};
+}
+const samplePromise=(window.claude&&window.claude.use)?window.claude.use("sample"):Promise.resolve(null);
+let sampleOK=null;samplePromise.then(s=>{sampleOK=!!s;if(!s)document.querySelectorAll("[data-needs-claude]").forEach(b=>{b.disabled=true;b.title="Solo disponible al abrir la página desde Claude"})}).catch(()=>{sampleOK=false});
+["fbgo","qsEval","qsGen","cvStart","cvSend","cvEnd","srcEval"].forEach(id=>$(id).setAttribute("data-needs-claude",""));
+async function askJSON(prompt,out){
+  const sample=await samplePromise;if(!sample){out.innerHTML='<p class="warn">Las funciones con Claude solo van al abrir la página desde Claude.</p>';return null}
+  try{return await sample.json(prompt,{modelTier:"default"})}
+  catch(e){out.innerHTML=`<p class="warn">${e&&e.code==="not_granted"?"Sin permiso para consultar a Claude desde esta página.":e&&e.code==="rate_limited"?"Demasiadas consultas seguidas; espera un minuto.":"No se pudo obtener la respuesta. Inténtalo de nuevo en un momento."}</p>`;return null}
+}
+const COACH="You are an English coach for a Spanish university lecturer (advanced C1) who teaches History of Sport in English to international first-year students at UCAM (Murcia). His text may come from speech dictation: ignore punctuation and capitalisation, and treat words that look like misrecognitions as possible pronunciation problems. Flag only real problems and never invent errors. British English. In Spanish text never use long dashes.";
+function fbHTML(r){
+  return `${r.overall?`<h4>Valoración</h4><p>${esc(r.overall)}</p>`:""}
+   <h4>Correcciones</h4>${(r.fixes||[]).length?r.fixes.map(f=>`<div class="fix"><span class="said">${esc(f.said)}</span> → <span class="better">${esc(f.better)}</span> <button data-say="${esc(f.better)}" aria-label="Oír">${PLAY}</button><div class="small"><span class="tag">${esc(f.type||"")}</span> ${esc(f.why||"")}</div></div>`).join(""):"<p>No hay errores que señalar.</p>"}
+   ${r.model?`<h4>Respuesta modelo</h4><div class="target">${esc(r.model)}</div><button data-say="${esc(r.model)}">${PLAY}Oír</button>`:""}
+   ${(r.phrases||[]).length?`<h4>Frases útiles</h4><div class="kp">${r.phrases.map(p=>`<button data-say="${esc(p)}">${PLAY}${esc(p)}</button>`).join("")}</div>`:""}
+   ${(r.pronunciation||[]).length?`<h4>Pronunciación</h4>${r.pronunciation.map(p=>`<div class="fix"><button data-say="${esc(p.word)}">${PLAY}${esc(p.word)}</button> <span class="stress">${esc(p.stress||"")}</span><div class="small">${esc(p.tip||"")}</div></div>`).join("")}`:""}`;
+}
+const FBSHAPE=`{"overall":"two or three sentences in Spanish, specific to this text","fixes":[{"said":"exact fragment","better":"corrected English","type":"gramática | vocabulario | falso amigo | colocación | registro | posible pronunciación","why":"short explanation in Spanish"}],"phrases":["up to three natural English phrases he could use"],"pronunciation":[{"word":"English word from his text","stress":"syllables with the stressed one in capitals","tip":"short tip in Spanish"}]}`;
+function addMissed(words){words.filter(w=>w.length>2).forEach(w=>{const id="w:"+w;if(!ST.srs[id])ST.srs[id]={b:0,due:0}})}
+
+/* ================= 4 STUDENT QUESTIONS ================= */
+function qsPool(a){if(a==="all")return [].concat(...Object.values(QS),ST.gen||[]);if(a==="gen")return ST.gen||[];return QS[a]||[]}
+$("qsArea").innerHTML=Object.entries(QSAREA).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+$("qsGenTopic").innerHTML=topicOpts(Object.keys(TOPICS).filter(k=>/^t\d|intro/.test(k)));
+let qsCur=null,qsLast=null;
+function qsTally(){const l=ST.scores.listen;if(!l.length){$("qsTally").textContent="";return}const avg=Math.round(l.slice(-20).reduce((a,b)=>a+b.p,0)/Math.min(20,l.length));$("qsTally").textContent=`Media de las últimas ${Math.min(20,l.length)}: ${avg}%`}
+$("qsNew").onclick=()=>{const pool=qsPool($("qsArea").value).filter(q=>q!==qsLast);if(!pool.length){$("qsOut").innerHTML='<p class="warn">Este bloque está vacío. Genera preguntas nuevas con Claude.</p>';return}
+  const q=pick(pool);qsLast=q;const vc=$("qsRnd").checked?randomVoice():currentVoice();qsCur={q,vc,checked:false};
+  $("qsHeard").value="";$("qsAns").value="";$("qsOut").innerHTML="";$("qsFb").innerHTML="";stopAll();speak(q,{vc,silent:true});$("now").textContent="Suena una pregunta. El acento se muestra al comprobar.";};
+$("qsRep").onclick=()=>{if(qsCur){stopAll();speak(qsCur.q,{vc:qsCur.vc,silent:true})}};
+$("qsSlow").onclick=()=>{if(qsCur){stopAll();speak(qsCur.q,{vc:qsCur.vc,silent:true,rate:.8})}};
+function qsShow(extra){$("qsOut").innerHTML=(extra||"")+`<div class="okbox"><b>${esc(qsCur.q)}</b><br><span class="small">Acento: ${esc(qsCur.vc?qsCur.vc.acc+" · "+cleanName(qsCur.vc.v.name):"voz por defecto")}</span></div>`}
+$("qsCheck").onclick=()=>{if(!qsCur)return;const h=$("qsHeard").value.trim();if(!h){$("qsOut").innerHTML='<p class="warn">Escribe primero lo que has entendido.</p>';return}
+  const d=diffHTML(qsCur.q,h);if(!qsCur.checked){qsCur.checked=true;ST.scores.listen.push({p:d.pct,a:qsCur.vc?qsCur.vc.acc:"",d:today()});ST.scores.listen=ST.scores.listen.slice(-300);bump("listen");save();qsTally()}qsShow(d.html)};
+$("qsReveal").onclick=()=>{if(qsCur)qsShow("")};
+$("qsEval").onclick=async()=>{if(!qsCur){$("qsFb").innerHTML='<p class="warn">Escucha primero una pregunta.</p>';return}
+  const a=$("qsAns").value.trim();if(a.split(/\s+/).length<5){$("qsFb").innerHTML='<p class="warn">Responde con al menos una o dos frases.</p>';return}
+  $("qsFb").innerHTML='<p class="muted">Pensando… puede tardar medio minuto.</p>';
+  const r=await askJSON(`${COACH}
+A student asked: "${qsCur.q}"
+The lecturer answered (dictated): """${a}"""
+Assess his answer as spoken classroom English: is it clear, does it answer the question, is the English correct and natural. If something he says about the module or about history looks doubtful, mention it cautiously in "overall" without asserting facts you are unsure of.
+Return JSON only: ${FBSHAPE.replace('"phrases"','"model":"a short natural spoken model answer in English, 2 to 4 sentences, consistent with what he said","phrases"')}
+At most 6 fixes and 4 pronunciation items.`,$("qsFb"));
+  if(r)$("qsFb").innerHTML=fbHTML(r)};
+$("qsGen").onclick=async()=>{const t=$("qsGenTopic").value;$("qsGenOut").innerHTML='<p class="muted">Generando…</p>';
+  const r=await askJSON(`Write six questions that first-year Sport Sciences students from different countries might ask their lecturer during a History of Sport class on: ${TOPICS[t]}. The course takes a socio-cultural and functional approach. Mix curious, confused and challenging questions; keep them spoken and natural, 8 to 25 words each, and let two of them contain small learner-English slips typical of non-native students. Return JSON only: {"questions":["..."]}`,$("qsGenOut"));
+  if(r&&Array.isArray(r.questions)){ST.gen=(ST.gen||[]).concat(r.questions.filter(q=>typeof q==="string")).slice(-120);save();$("qsGenOut").innerHTML=`<p>Añadidas ${r.questions.length} preguntas al bloque «Generadas por Claude».</p>`;$("qsArea").value="gen"}};
+qsTally();
+
+/* ================= 5 CONVERSATION ================= */
+$("cvSel").innerHTML=`<optgroup label="Tutorías y aula">${CV.filter(c=>!c.id.startsWith("conf")).map(c=>`<option value="${c.id}">${esc(c.title)} · ${esc(c.who)}</option>`).join("")}</optgroup><optgroup label="Congreso">${CV.filter(c=>c.id.startsWith("conf")).map(c=>`<option value="${c.id}">${esc(c.title)}</option>`).join("")}</optgroup>`;
+let cv=null;
+function cvBrief(){const c=CV.find(x=>x.id===$("cvSel").value);$("cvBrief").textContent=c.brief+" Habla tú primero o pulsa «Empezar» para que abra la conversación."}
+$("cvSel").onchange=()=>{cvBrief();cv=null;$("cvChat").innerHTML="";$("cvVoice").textContent=""};cvBrief();
+function cvRender(){$("cvChat").innerHTML=cv.turns.map(t=>`<div class="msg ${t.role==="assistant"?"them":"me"}"><span class="who">${t.role==="assistant"?esc(cv.c.who):"Tú"}</span>${esc(t.content)}</div>`).join("");$("cvChat").scrollTop=1e6}
+async function cvTurn(){
+  const c=cv.c;const hist=cv.turns.map(t=>`${t.role==="assistant"?"YOU":"LECTURER"}: ${t.content}`).join("\n");
+  const r=await askJSON(`Role-play. You are ${c.role}
+You are talking to Dr Alejandro Leiva, the lecturer (a Spanish native speaker who teaches in English). Stay in character. Speak naturally, as in real spoken conversation, in 1 to 3 sentences. React realistically to what he says: if his answer is unclear, ask him to clarify; if it is reasonable, accept it gradually. Do not coach him and do not mention that this is practice.
+Conversation so far:
+${hist||"(nothing yet: open the conversation in character)"}
+Return JSON only: {"reply":"your next line","end":true or false}. Set end to true only when the situation is naturally resolved.`,$("cvFb"));
+  if(!r||!r.reply)return;cv.turns.push({role:"assistant",content:r.reply});cvRender();stopAll();speak(r.reply,{vc:cv.vc,silent:true});
+  if(r.end)$("cvFb").innerHTML='<p class="okbox">La conversación ha llegado a su fin. Pulsa «Terminar y valorar».</p>';
+}
+function cvEnsure(){if(!cv){const c=CV.find(x=>x.id===$("cvSel").value);cv={c,turns:[],vc:voiceForLang(c.lang)};$("cvVoice").textContent=cv.vc?"Voz: "+cv.vc.acc:"";$("cvFb").innerHTML='<p class="small muted">Aparecerá aquí al terminar.</p>'}}
+$("cvStart").onclick=()=>{cv=null;cvEnsure();$("cvChat").innerHTML='<p class="muted small">Pensando…</p>';cvTurn()};
+$("cvSend").onclick=()=>{const t=$("cvIn").value.trim();if(!t)return;cvEnsure();cv.turns.push({role:"user",content:t});$("cvIn").value="";cvRender();cvTurn()};
+$("cvRep").onclick=()=>{if(!cv)return;const last=[...cv.turns].reverse().find(t=>t.role==="assistant");if(last){stopAll();speak(last.content,{vc:cv.vc,silent:true})}};
+$("cvEnd").onclick=async()=>{if(!cv||cv.turns.filter(t=>t.role==="user").length<1){$("cvFb").innerHTML='<p class="warn">Responde al menos una vez antes de pedir la valoración.</p>';return}
+  $("cvFb").innerHTML='<p class="muted">Valorando…</p>';
+  const tr=cv.turns.map(t=>`${t.role==="assistant"?"OTHER":"LECTURER"}: ${t.content}`).join("\n");
+  const r=await askJSON(`${COACH}
+Situation: ${cv.c.role}
+Transcript:
+${tr}
+Assess only the LECTURER's turns. Also judge how he handled the situation (tone, clarity, firmness or empathy as appropriate, whether he answered what was asked) and put that in "overall" in Spanish.
+Return JSON only: ${FBSHAPE}
+At most 8 fixes and 5 pronunciation items.`,$("cvFb"));
+  if(r)$("cvFb").innerHTML=fbHTML(r)};
+
+/* ================= 6 HISTORIAN ================= */
+const bank=a=>a.map(h=>`<div class="fix"><b>${esc(h[0])}</b><div class="ex">${esc(h[1])}</div><button data-say="${esc(h[1])}">${PLAY}Oír</button></div>`).join("");
+$("hedge").innerHTML=bank(HEDGE);$("descr").innerHTML=bank(DESCR);
+$("srcSel").innerHTML=SRCS.map((s,i)=>`<option value="${i}">${esc(TOPICS[s[0]].split(" · ")[0])} · ${esc(s[1])}</option>`).join("");
+let tmr=null;$("srcTimer").onclick=()=>{clearInterval(tmr);let s=45;$("srcClock").textContent="0:45";tmr=setInterval(()=>{s--;$("srcClock").textContent="0:"+String(Math.max(s,0)).padStart(2,"0");if(s<=0){clearInterval(tmr);$("srcClock").textContent="Tiempo"}},1000)};
+$("srcEval").onclick=async()=>{const t=$("srcIn").value.trim();if(t.split(/\s+/).length<10){$("srcFb").innerHTML='<p class="warn">Describe la fuente con al menos un par de frases.</p>';return}
+  $("srcFb").innerHTML='<p class="muted">Pensando…</p>';
+  const r=await askJSON(`${COACH}
+He is describing this visual source aloud to his students: ${SRCS[+$("srcSel").value][1]}. You cannot see the image, so do not judge what he says is in it; judge only the language of description and interpretation (spatial phrases, depicted/shown, hedging, linking what is seen to what it tells us).
+His description: """${t}"""
+Return JSON only: ${FBSHAPE}
+At most 6 fixes.`,$("srcFb"));if(r)$("srcFb").innerHTML=fbHTML(r)};
+$("tenses").innerHTML=TENSES.map(t=>`<div class="fix"><b>${esc(t[0])}</b>. ${esc(t[1])}<div class="ex">${esc(t[2])}</div><button data-say="${esc(t[2])}">${PLAY}Oír</button></div>`).join("");
+let tqI=0;const tqOrder=shuffle(TQ.map((_,i)=>i));
+function renderTQ(){const q=TQ[tqOrder[tqI]];const ord=shuffle([0,1,2]);
+  $("tq").innerHTML=`<p class="big" style="font-size:1.2rem">${esc(q[0])}</p><div class="opts">${ord.map(i=>`<button data-tq="${i}">${esc(q[1][i])}</button>`).join("")}</div><div id="tqNote" class="small"></div><div class="ctrl"><button id="tqNext">Siguiente</button><span class="tally">${tqI+1} de ${TQ.length}</span></div>`;
+  $("tqNext").onclick=()=>{tqI=(tqI+1)%TQ.length;renderTQ()};
+  $("tq").querySelector(".opts").onclick=e=>{const b=e.target.closest("[data-tq]");if(!b)return;const ok=+b.dataset.tq===q[2];
+    $("tq").querySelectorAll("[data-tq]").forEach(x=>{if(+x.dataset.tq===q[2])x.classList.add("right");else if(x===b&&!ok)x.classList.add("wrong")});
+    const full=q[0].replace("___",q[1][q[2]].split(" / ")[0]).replace("___",q[1][q[2]].split(" / ")[1]||"");
+    $("tqNote").innerHTML=`${ok?"Correcto.":"La forma es «"+esc(q[1][q[2]])+"»."} ${esc(q[3])} <button data-say="${esc(full)}">${PLAY}Oír</button>`}}
+renderTQ();
+
+/* ================= 7 REVIEW ================= */
+const INTV=[0,1,2,4,8,16,32,64];const DAY=864e5;
+function cardInfo(id){if(id.startsWith("p:")){const c=(ST.custom||{})[id];return c?{front:c.t,ipa:c.ipa||"",st:c.st||"",n:c.n||"",ex:c.ex||"",say:c.t}:null}if(id.startsWith("w:")){const w=id.slice(2);return {front:w,ipa:"",st:"",n:"Palabra que el dictado no reconoció.",ex:"",say:w}}
+  const e=GL.find(g=>g.id===id);if(!e)return null;return {front:e.t,ipa:e.ipa,st:e.st,n:e.n,ex:e.ex,say:e.s==="ff"||e.s==="class"?e.ex:sayable(e)}}
+function dueList(){const now=Date.now();return Object.entries(ST.srs).filter(([id,c])=>c.due<=now&&cardInfo(id)).sort((a,b)=>a[1].due-b[1].due).map(x=>x[0])}
+let rvCur=null;
+function renderTiles(){const ids=Object.keys(ST.srs);const due=dueList().length;const td=(ST.days[today()]||{});
+  const streak=(()=>{let n=0,d=new Date();for(;;){const k=d.toISOString().slice(0,10);if(ST.days[k]){n++;d=new Date(d-DAY)}else break}return n})();
+  const learned=ids.filter(i=>ST.srs[i].b>=4).length;
+  $("tiles").innerHTML=[["Para hoy",due],["En el mazo",ids.length],["Consolidadas",learned],["Repasadas hoy",td.rv||0],["Días seguidos",streak]].map(([l,v])=>`<div class="tile"><div class="tag">${l}</div><div class="v">${v}</div></div>`).join("")}
+function renderCard(){const due=dueList();if(!due.length){$("rvCard").innerHTML=`<p class="muted">${Object.keys(ST.srs).length?"No quedan tarjetas para hoy.":"El mazo está vacío. Añade un tema desde el glosario."}</p>`;rvCur=null;return}
+  rvCur=due[0];const c=cardInfo(rvCur);
+  $("rvCard").innerHTML=`<p class="small muted">Dilo en voz alta antes de mirar.</p><div class="big">${esc(c.front)}</div><div id="rvBack" hidden>${c.ipa?`<div class="ipa">${esc(c.ipa)}</div>`:""}${c.st?`<div class="stress">${esc(c.st)}</div>`:""}<div class="note">${esc(c.n||"")}</div>${c.ex?`<div class="ex">${esc(c.ex)}</div>`:""}<div class="ctrl"><button data-say="${esc(c.say)}">${PLAY}Otra vez</button></div><div class="ctrl"><button data-r="0">Me ha salido mal</button><button data-r="1">Bien</button><button data-r="2">Fácil</button></div></div><div class="ctrl" id="rvShowW"><button class="primary" id="rvShow">Ver y oír</button></div>`;
+  $("rvShow").onclick=()=>{$("rvBack").hidden=false;$("rvShowW").hidden=true;say(c.say)};
+  $("rvBack").addEventListener("click",e=>{const b=e.target.closest("[data-r]");if(!b)return;const q=+b.dataset.r;const s=ST.srs[rvCur];
+    if(q===0){s.b=0;s.due=Date.now()+5*60e3}else{s.b=Math.min(s.b+q,INTV.length-1);s.due=Date.now()+INTV[s.b]*DAY-36e5}
+    bump("rv");save();renderTiles();renderCard()})}
+function spark(vals,max){if(!vals.length)return '<p class="small muted">Todavía sin datos.</p>';const w=300,h=70,n=vals.length,bw=Math.max(2,w/n-2);
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="Últimos resultados">${vals.map((v,i)=>`<rect x="${i*(w/n)}" y="${h-(v/max)*h}" width="${bw}" height="${(v/max)*h}" style="fill:var(--accent)" opacity="${i===n-1?1:.55}"/>`).join("")}<line x1="0" x2="${w}" y1="${h-0.8*h}" y2="${h-0.8*h}" style="stroke:var(--muted)" stroke-dasharray="3 3" stroke-width="1"/></svg>`}
+function renderProg(){const d=ST.scores.dict.slice(-30).map(x=>x.p),l=ST.scores.listen.slice(-30).map(x=>x.p);
+  const avg=a=>a.length?Math.round(a.reduce((x,y)=>x+y,0)/a.length)+"%":"sin datos";
+  const byAcc={};ST.scores.listen.forEach(x=>{(byAcc[x.a]=byAcc[x.a]||[]).push(x.p)});
+  const accRows=Object.entries(byAcc).filter(([a])=>a).map(([a,v])=>[a,Math.round(v.reduce((x,y)=>x+y,0)/v.length),v.length]).sort((a,b)=>a[1]-b[1]);
+  const [ma,mt]=ST.scores.mp,[ea,et]=ST.scores.ed;
+  $("prog").innerHTML=`<div class="tag">Dictado, últimos 30 (media ${avg(d)})</div>${spark(d,100)}
+   <div class="tag" style="margin-top:12px">Comprensión de preguntas, últimas 30 (media ${avg(l)})</div>${spark(l,100)}
+   <p class="small muted">La línea discontinua marca el 80 %.</p>
+   <p class="small">Pares mínimos: ${mt?Math.round(ma/mt*100)+"% de "+mt:"sin datos"} · Terminaciones -ed: ${et?Math.round(ea/et*100)+"% de "+et:"sin datos"}</p>
+   ${accRows.length?`<h4>Acentos que más te cuestan</h4><div class="tw"><table class="t"><tr><th>Acento</th><th>Media</th><th>Preguntas</th></tr>${accRows.slice(0,8).map(r=>`<tr><td>${esc(r[0])}</td><td>${r[1]}%</td><td>${r[2]}</td></tr>`).join("")}</table></div>`:""}`}
+function renderReview(){renderTiles();renderCard();renderProg()}
+
+
+/* ================= SCRIPTS FILTER ================= */
+$("scTopic").innerHTML='<option value="all">Todos los temas</option>'+topicOpts([...new Set(SC.map(s=>s.topic))]);
+$("scTopic").onchange=()=>{const t=$("scTopic").value;document.querySelectorAll("#scripts article").forEach(a=>a.hidden=!(t==="all"||a.dataset.topic===t))};
+
+/* ================= TODAY ================= */
+const TEACH=["intro","t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11"];
+$("curTopic").innerHTML=topicOpts(TEACH);
+function curTopic(){return ST.topic&&TEACH.includes(ST.topic)?ST.topic:"t1"}
+$("curTopic").value=curTopic();
+$("curTopic").onchange=()=>{ST.topic=$("curTopic").value;save();$("scTopic").value=ST.topic;$("scTopic").onchange();$("nmTopic").value=ST.topic;renderNames()};
+let PLAN=null;
+function renderPlan(){const el=$("plan");if(!PLAN||!PLAN.week){return}
+  const d=PLAN.drills||[],q=PLAN.questions||[];
+  el.innerHTML=`${PLAN.note?`<p>${esc(PLAN.note)}</p>`:""}${(PLAN.classes||[]).length?`<p class="small muted">Clases en inglés: ${esc(PLAN.classes.join(" · "))}</p>`:""}
+   ${d.length?`<div class="tag">Ejercicios de la semana</div>${d.map(x=>`<div class="fix"><b>${esc(x.t)}</b> ${x.ipa?`<span class="ipa">${esc(x.ipa)}</span>`:""} ${x.st?`<span class="stress">${esc(x.st)}</span>`:""}<div class="small">${esc(x.n||"")}</div>${x.ex?`<div class="ex">${esc(x.ex)}</div>`:""}<button data-say="${esc(x.ex||x.t)}">${PLAY}Oír</button></div>`).join("")}<div class="ctrl"><button id="planAdd">Añadir estos ejercicios al repaso</button></div>`:""}
+   ${q.length?`<div class="tag">Preguntas de la semana</div><p class="small">Están también en «Preguntas de alumnos», en el bloque «Generadas por Claude».</p>`:""}<p class="small muted">Preparado el ${esc(PLAN.week)}.</p>`;
+  const b=$("planAdd");if(b)b.onclick=()=>{ST.custom=ST.custom||{};d.forEach(x=>{const id="p:"+x.t;ST.custom[id]=x;if(!ST.srs[id])ST.srs[id]={b:0,due:0}});save();b.textContent="Añadidos al repaso"};
+  if(q.length){ST.gen=ST.gen||[];q.forEach(x=>{if(!ST.gen.includes(x))ST.gen.push(x)})}
+}
+(async()=>{try{if(!window.claude||!window.claude.use)return;const db=await window.claude.use("db");if(!db)return;const p=await db.doc("lab/plan").get();if(p.exists){PLAN=p.data();renderPlan()}}catch(e){}})();
+
+/* ================= QUEUE ENGINE (warm-up, hands-free) ================= */
+let wakeLock=null;
+async function keepAwake(on){try{if(on&&navigator.wakeLock&&!wakeLock){wakeLock=await navigator.wakeLock.request("screen")}else if(!on&&wakeLock){await wakeLock.release();wakeLock=null}}catch(e){}}
+function runQueue(items,nowEl,stepEl,opt={}){
+  stopAll();const tok=queueToken;let i=0;keepAwake(true);
+  const fin=()=>{keepAwake(false)};
+  const next=()=>{if(tok!==queueToken){fin();return}
+    if(i>=items.length){if(opt.loop&&items.length){i=0;if(opt.reshuffle)items=opt.reshuffle()}else{nowEl.textContent="Terminado.";stepEl.textContent="";fin();return}}
+    const it=items[i++];nowEl.textContent=it.show||it.say||"";stepEl.textContent=(it.step||"")+(opt.loop?"":` · ${i} de ${items.length}`);
+    if(!it.say){setTimeout(next,it.pause||800);return}
+    let done=false;const go=()=>{if(done)return;done=true;if(tok!==queueToken){fin();return}setTimeout(next,it.pause||1500)};
+    const r=speak(it.say,{vc:it.vc,rate:it.rate,silent:!!it.vc,onend:go});
+    setTimeout(go,r?it.say.split(/\s+/).length*650/rate+4000:0)};
+  next();
+}
+const pause=w=>Math.max(1800,w.split(/\s+/).length*520);
+function topicEntries(t,k){return GL.filter(e=>e.s===t&&(!k||e.k===k))}
+function failItems(n){return dueList().slice(0,n).map(id=>cardInfo(id)).filter(Boolean)}
+$("wuGo").onclick=()=>{
+  const t=curTopic();const items=[{show:`Calentamiento · ${TOPICS[t]}`,step:"Inicio",pause:900}];
+  shuffle(topicEntries(t,"name")).slice(0,5).forEach(e=>items.push({say:sayable(e),show:`${e.t}  ${e.st||""}`,step:"Nombres propios",pause:2600}));
+  shuffle(topicEntries(t,"term")).slice(0,3).forEach(e=>{items.push({say:sayable(e),show:`${e.t}  ${e.st||""}`,step:"Términos",pause:2400});if(e.ex)items.push({say:e.ex,show:e.ex,step:"Términos",pause:pause(e.ex)})});
+  const scs=SC.filter(x=>x.topic===t);if(scs.length){const sents=scs[0].sents.flat().slice(0,3);sents.forEach(x=>items.push({say:x,show:x,step:"Guion: repite",pause:pause(x)}))}
+  shuffle(QS[t]||[]).slice(0,2).forEach(q=>{const vc=randomVoice();items.push({say:q,vc,show:`Pregunta de alumno (${vc?vc.acc:""}). Piensa la respuesta en voz alta.`,step:"Preguntas",pause:9000})});
+  failItems(5).forEach(c=>items.push({say:c.say,show:c.front,step:"Tus fallos",pause:2600}));
+  (PLAN&&PLAN.drills||[]).slice(0,3).forEach(x=>items.push({say:x.ex||x.t,show:x.ex||x.t,step:"Plan de la semana",pause:pause(x.ex||x.t)}));
+  items.push({say:"Right, let's get started.",show:"Right, let's get started.",step:"Fin",pause:500});
+  bump("warmup");save();runQueue(items,$("wuNow"),$("wuStep"));
+};
+$("wuStop").onclick=()=>{stopAll();$("wuNow").textContent="";$("wuStep").textContent=""};
+function mfItems(){
+  const t=curTopic(),src=$("mfSrc").value,pz=+$("mfPause").value;const it=[];
+  const termPair=e=>{it.push({say:sayable(e),show:`${e.t}  ${e.st||""}`,step:TOPICS[e.s],pause:pz});if(e.ex)it.push({say:e.ex,show:e.ex,step:TOPICS[e.s],pause:pz+pause(e.ex)-1500})};
+  if(src==="terms")shuffle(topicEntries(t,"term")).forEach(termPair);
+  if(src==="names")shuffle(topicEntries(t,"name")).forEach(e=>it.push({say:sayable(e),show:`${e.t}  ${e.st||""}`,step:"Nombres",pause:pz}));
+  if(src==="script")SC.filter(x=>x.topic===t).forEach(x=>x.sents.flat().forEach(z=>it.push({say:z,show:z,step:x.title,pause:pz+pause(z)-1500})));
+  if(src==="class")shuffle(GL.filter(e=>e.s==="class")).forEach(e=>it.push({say:e.ex,show:e.ex,step:"Frases de aula",pause:pz+pause(e.ex)-1500}));
+  if(src==="ff")shuffle(GL.filter(e=>e.s==="ff")).forEach(e=>it.push({say:e.ex,show:`${e.t}: ${e.ex}`,step:"Falsos amigos",pause:pz+pause(e.ex)-1500}));
+  if(src==="fails")failItems(40).forEach(c=>{it.push({say:c.say,show:c.front,step:"Mis fallos",pause:pz});if(c.ex)it.push({say:c.ex,show:c.ex,step:"Mis fallos",pause:pz})});
+  return it;
+}
+$("mfGo").onclick=()=>{const it=mfItems();if(!it.length){$("mfNow").textContent="No hay nada que practicar en esta selección.";return}runQueue(it,$("mfNow"),$("mfStep"),{loop:$("mfLoop").checked,reshuffle:mfItems})};
+$("mfStop").onclick=()=>{stopAll();$("mfNow").textContent="";$("mfStep").textContent=""};
+
+/* ================= PODCAST ================= */
+const POD_ASSET="__POD_ASSET__";
+const PODS=[{t:"Topic 3 · Crete and Greece (71 min)",src:[POD_ASSET.startsWith("__")?"":POD_ASSET,"audio/podcast_t3_en.m4a"].filter(Boolean)}];
+const au=$("podAudio");let podSrcI=0,segStart=0,segAuto=false,segTimer=null,segEnd=null;
+$("podSel").innerHTML=PODS.map((p,i)=>`<option value="${i}">${esc(p.t)}</option>`).join("");
+function podLoad(){podSrcI=0;au.src=PODS[+$("podSel").value].src[0];segStart=0;segPos()}
+au.addEventListener("error",()=>{const p=PODS[+$("podSel").value];if(podSrcI<p.src.length-1){podSrcI++;au.src=p.src[podSrcI]}else $("podNote").textContent="No se ha podido cargar el audio en este visor."});
+$("podSel").onchange=podLoad;
+const fmt=x=>`${Math.floor(x/60)}:${String(Math.floor(x%60)).padStart(2,"0")}`;
+function segLen(){return +$("segLen").value}
+function segPos(){$("segPos").textContent=`${fmt(segStart)} a ${fmt(segStart+segLen())}${au.duration?" de "+fmt(au.duration):""}`}
+au.addEventListener("loadedmetadata",segPos);
+au.addEventListener("timeupdate",()=>{if(segEnd!=null&&au.currentTime>=segEnd){au.pause();segEnd=null;if(segAuto){segTimer=setTimeout(()=>{segStart+=segLen();if(au.duration&&segStart>=au.duration){segAuto=false;$("segAuto").setAttribute("aria-pressed",false);return}playSeg()},segLen()*1000*1.2+600)}}});
+function playSeg(){stopAll();clearTimeout(segTimer);au.playbackRate=+$("podSpeed").value;au.currentTime=segStart;segEnd=segStart+segLen();segPos();au.play().catch(()=>{})}
+$("segPlay").onclick=playSeg;
+$("segNext").onclick=()=>{segStart+=segLen();playSeg()};
+$("segPrev").onclick=()=>{segStart=Math.max(0,segStart-segLen());playSeg()};
+$("segAuto").onclick=()=>{segAuto=!segAuto;$("segAuto").setAttribute("aria-pressed",segAuto);if(segAuto)playSeg();else{clearTimeout(segTimer)}};
+$("podSpeed").onchange=()=>{au.playbackRate=+$("podSpeed").value};
+au.addEventListener("seeked",()=>{if(segEnd==null){segStart=Math.floor(au.currentTime);segPos()}});
+podLoad();
+
+/* ================= 8 DIAGNOSIS ================= */
+const DX=[];SC.forEach((s,si)=>flat(si).forEach(it=>DX.push({g:s.title,x:it.x})));GL.filter(e=>e.ex&&e.s!=="class").forEach(e=>DX.push({g:TOPICS[e.s],x:e.ex}));
+const byG={};DX.forEach((d,i)=>{(byG[d.g]=byG[d.g]||[]).push(i)});
+$("dxsel").innerHTML=Object.keys(byG).map(g=>`<optgroup label="${esc(g)}">${byG[g].map(i=>`<option value="${i}">${esc(DX[i].x.length>90?DX[i].x.slice(0,88)+"…":DX[i].x)}</option>`).join("")}</optgroup>`).join("");
+const showT=()=>{$("dxtarget").textContent=DX[+$("dxsel").value].x;$("dxout").innerHTML=""};$("dxsel").onchange=showT;showT();
+$("dxplay").onclick=()=>say(DX[+$("dxsel").value].x);
+$("dxclear").onclick=()=>{$("dxin").value="";$("dxout").innerHTML=""};
+$("dxgo").onclick=()=>{const said=$("dxin").value.trim();if(!said){$("dxout").innerHTML='<p class="warn">Dicta primero la frase en el recuadro.</p>';return}
+  const d=diffHTML(DX[+$("dxsel").value].x,said);ST.scores.dict.push({p:d.pct,d:today()});ST.scores.dict=ST.scores.dict.slice(-300);addMissed(d.missed);bump("dict");save();
+  $("dxout").innerHTML=d.html+(d.missed.length?`<div class="tag">Escucha y repite (pasan al repaso)</div><div class="kp">${d.missed.map(w=>`<button data-say="${esc(w)}">${PLAY}${esc(w)}</button>`).join("")}</div>`:'<p>Todo reconocido. Prueba con otra frase o con otro acento de referencia.</p>')};
+$("fbctx").innerHTML=SC.map((s,i)=>`<option value="${i}">${esc(s.title)}</option>`).join("")+'<option value="free">Otro tema de la asignatura</option>';
+$("fbgo").onclick=async()=>{const text=$("fbin").value.trim();if(text.split(/\s+/).length<8){$("fbout").innerHTML='<p class="warn">Escribe o dicta al menos un par de frases.</p>';return}
+  const v=$("fbctx").value;const topic=v==="free"?"another part of a first-year History of Sport module":SC[+v].title+". Reference version: "+SC[+v].p.join(" ");
+  $("fbout").innerHTML='<p class="muted">Pensando… puede tardar medio minuto.</p>';
+  const r=await askJSON(`${COACH}
+Below is something he said while rehearsing a class on: ${topic}
+TEXT: """${text}"""
+Return JSON only: ${FBSHAPE}
+At most 8 fixes and 5 pronunciation items.`,$("fbout"));if(r)$("fbout").innerHTML=fbHTML(r)};
+function renderLog(){$("log").innerHTML=ST.errors.length?ST.errors.map((l,i)=>`<li><span>${esc(l)}</span><button data-del="${i}">Quitar</button></li>`).join(""):'<li class="muted small">Todavía no hay ningún fallo apuntado.</li>'}
+$("logadd").onclick=()=>{const v=$("login").value.trim();if(!v)return;ST.errors.unshift(v);$("login").value="";save();renderLog()};
+$("login").addEventListener("keydown",e=>{if(e.key==="Enter")$("logadd").click()});
+$("log").addEventListener("click",e=>{const b=e.target.closest("[data-del]");if(b){ST.errors.splice(+b.dataset.del,1);save();renderLog()}});
+function renderAllState(){renderLog();try{$("curTopic").value=curTopic()}catch(e){}mpTally();edTally();qsTally();if(!$("tabs").querySelector('[data-t="rv"][aria-selected="true"]'))return;renderReview()}
+renderLog();
+showTab(TABS.some(t=>t[0]===st0)?st0:"hoy");
+</script>
+
+</body>
+</html>
